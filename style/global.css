@@ -159,6 +159,15 @@ input[type=number] {
     transform: rotate(90deg);
   }
 }
+@media screen and (max-width: 1023px) {
+  .list-head {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    will-change: scroll-position;
+    contain: size style layout;
+  }
+}
 .loader::after {
   content: "";
   position: absolute;
@@ -364,14 +373,4 @@ input[type=number] {
 
 header .nav-list-header li.active a {
   color: #e97652 !important;
-}
-
-@media screen and (max-width: 1023px) {
-  .list-head {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    will-change: scroll-position;
-    contain: size style layout;
-  }
 }/*# sourceMappingURL=global.css.map */

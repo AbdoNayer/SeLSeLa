@@ -18,7 +18,7 @@ $(window).on("load", function () {
   $("body").css("overflow-y", "auto");
 
   // Animation Page
-  AOS.init();
+  // AOS.init();
 });
 
 $(document).ready(function () {

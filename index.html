@@ -22,7 +22,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#121320" />
 
     <!-- CSS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
     <!-- CSS OwlCarousel 2 -->
     <link
       rel="stylesheet"
@@ -76,7 +79,14 @@
         <div class="flex items-center justify-between">
           <div class="flex items-center justify-between lg:w-auto w-full">
             <!-- Logo -->
-            <a href="index.html"><img src="./images/logo.png" alt="" /></a>
+            <a
+              href="index.html"
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="500"
+              ><img src="./images/logo.png" alt=""
+            /></a>
             <!-- Click BTN On Mobile Open Nav  -->
             <div class="click-nav lg:hidden block">
               <div class="handle bg-primary"></div>
@@ -141,7 +151,9 @@
               </li>
             </ul>
             <div class="flex items-center justify-center lg:mt-0 mt-9 gap-7">
-              <a href="" class="text-[14px] text-primary">تسجيل دخول</a>
+              <a href="login.html" class="text-[14px] text-primary"
+                >تسجيل دخول</a
+              >
               <a
                 href=""
                 class="bg-primaryOrange SF-medium text-[14px] relative text-white rounded-full shadow-lg px-6 py-3 before:content-[''] before:absolute before:top-[4px] before:right-0 before:w-full before:h-full before:rounded-full before:bg-[#E97652] before:opacity-[15%]"
@@ -153,6 +165,7 @@
       </div>
     </header>
 
+    <!-- Section Offer Services From Home -->
     <div class="p-5">
       <div class="container">
         <div
@@ -177,8 +190,13 @@
                 <img
                   src="./images/tree.png"
                   class="absolute right-[10px] bottom-[60px] max-[520px]:max-w-[50px] max-[520px]:right-[-10px]"
+                  data-aos="zoom-in"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="500"
                   alt=""
                 />
+                <!-- Section Tree Logos -->
                 <div
                   class="absolute left-0 right-0 m-auto top-[5px] z-[91] text-center max-[520px]:top-[-18px] max-[420px]:top-[30px]"
                 >
@@ -250,6 +268,10 @@
                     </div>
                     <div
                       class="bg-white w-[65px] h-[65px] rounded-full flex items-center justify-center max-[420px]:w-[40px] max-[420px]:h-[40px]"
+                      data-aos="zoom-in"
+                      data-aos-offset="200"
+                      data-aos-easing="ease-in-sine"
+                      data-aos-duration="500"
                     >
                       <img
                         src="./images/08.png"
@@ -260,10 +282,15 @@
                   </div>
                   <img
                     src="./images/tree-logo.png"
+                    data-aos="zoom-in"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="500"
                     class="m-auto max-[420px]:max-w-[210px] max-[420px]:relative max-[420px]:top-[5px]"
                     alt=""
                   />
                 </div>
+                <!-- Image Business Man -->
                 <img
                   src="./images/businessman.png"
                   class="relative z-[9] m-auto top-[70px]"
@@ -295,19 +322,255 @@
         </div>
       </div>
     </div>
+    <!-- Form to Login -->
+    <div class="">
+      <div class="container">
+        <div class="grid grid-cols-12 items-center gap-5">
+          <div class="lg:col-span-5 col-span-12"></div>
+          <div class="lg:col-span-7 col-span-12">
+            <form
+              action=""
+              class="bg-white flex items-center lg:flex-row flex-col lg:gap-3 gap-5 shadow-[0_5px_15px_-12px_rgba(150,167,227,56%)] lg:p-3 p-7 lg:border-0 border rounded-[10px] lg:rounded-full"
+            >
+              <div class="flex items-center gap-1 lg:w-[40%] w-full">
+                <span
+                  class="bg-[#93A8E5]/5 w-[40px] h-[40px] flex items-center justify-center rounded-full"
+                  ><i class="icon-user-io text-[#93A8E5]"></i
+                ></span>
+                <input
+                  type="text"
+                  class="rounded-full border border-[#93A8E5]/10 focus:border-primaryOrange h-[45px] px-5 text-[12px] flex-1"
+                  placeholder="البريد الالكتروني او رقم الجوال"
+                />
+              </div>
+              <div class="flex items-center gap-1 lg:w-[40%] w-full">
+                <span
+                  class="bg-[#E97652]/5 w-[40px] h-[40px] flex items-center justify-center rounded-full"
+                  ><i class="icon-lock-io text-primaryOrange"></i
+                ></span>
+                <div class="relative w-full">
+                  <input
+                    type="text"
+                    class="rounded-full border border-[#93A8E5]/10 focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                    placeholder="كلمة المرور"
+                  />
+                  <i
+                    class="icon-eye absolute top-[50%] translate-y-[-50%] rtl:left-[10px] ltr:right-[10px] text-[#D3D3D7]"
+                  ></i>
+                </div>
+              </div>
+              <button
+                class="h-[45px] lg:w-[20%] w-full px-3 text-white bg-primary rounded-full text-[12px] SF-medium"
+              >
+                تسجيل دخول
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Series In Numbers -->
+    <div class="pt-[120px]">
+      <div class="container">
+        <div class="text-center">
+          <h5 class="SF-bold text-[24px] text-primary">سلسلة في ارقام</h5>
+          <p class="text-[15px] text-primary mt-3">
+            انجازات تتحدث عنا وطموح لعنان السماء
+          </p>
+        </div>
+        <div class="bg-primary rounded-[40px] py-[80px] px-[50px] mt-9 relative">
+          <div class="flex justify-between items-center gap-5 relative">
+            <div
+              class="flex items-center lg:flex-row flex-col lg:gap-[70px] gap-5"
+            >
+              <div class="text-center">
+                <img src="./images/044.png" class="m-auto" alt="" />
+                <h1 class="SF-bold text-[50px] text-white">10k</h1>
+                <h5 class="SF-bold text-[14px] text-white">مستخدم فعال</h5>
+              </div>
+              <div class="text-center">
+                <img src="./images/033.png" class="m-auto" alt="" />
+                <h1 class="SF-bold text-[50px] text-white">40k</h1>
+                <h5 class="SF-bold text-[14px] text-white">الحجوزات الشهرية</h5>
+              </div>
+              <div class="text-center">
+                <img src="./images/022.png" class="m-auto" alt="" />
+                <h1 class="SF-bold text-[50px] text-white">8k</h1>
+                <h5 class="SF-bold text-[14px] text-white">التراخيص الشهرية</h5>
+              </div>
+              <div class="text-center">
+                <img src="./images/011.png" class="m-auto" alt="" />
+                <h1 class="SF-bold text-[50px] text-white">5k</h1>
+                <h5 class="SF-bold text-[14px] text-white">شركات</h5>
+              </div>
+            </div>
+            <div class="absolute top-0 left-0">
+              <img src="./images/speed.png" class="absolute top-[50%] translate-y-[-50%] left-0 right-0 m-auto" alt="">
+              <div class="border-[40px] border-primaryOrange/5 w-[400px] h-[400px] rounded-full flex items-center justify-center">
+                <div class="border-[10px] border-primaryOrange w-[280px] h-[280px] rounded-full flex items-center justify-center">
+                  <div class="border-[40px] border-primaryOrange w-[250px] h-[250px] rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="min-h-[800px]"></div>
 
     <!-- Footer -->
-    <footer class="bg-primary pt-3 rounded-[15px]">
+    <footer class="bg-primary pt-3 rounded-tr-[25px] rounded-tl-[25px]">
       <div class="container">
         <div class="grid grid-cols-12 lg:gap-5 py-6">
-          <div class="lg:col-span-4 col-span-12 lg:my-3"></div>
+          <div class="lg:col-span-3 col-span-12 lg:my-3">
+            <div class="my-4">
+              <a href="index.html" class="mb-9 block"
+                ><img src="./images/logo-footer.png" alt=""
+              /></a>
+              <h5 class="SF-bold text-white text-[14px]">
+                شركة سلسلة لتقديم الخدمات
+              </h5>
+              <p class="text-white text-[12px] mb-9 mt-5 leading-6">
+                تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
+                المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي مكان
+                تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
+              </p>
+              <a href="" class="flex items-center gap-3">
+                <i class="icon-map-pin text-[#93A8E5]"></i>
+                <span class="text-white text-[12px] max-w-[200px]"
+                  >المكلة العرية السعودية ٠-ش ارع عبد العزيز بن سعود</span
+                >
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-3 col-span-12 lg:my-3">
+            <div class="lg:mt-[60px] mt-[30px] lg:px-9">
+              <h5 class="text-[#93A8E5] SF-medium text-[16px]">روابط سريعة</h5>
+              <ul class="my-5">
+                <li>
+                  <a href="" class="text-white text-[14px] block my-3"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-white text-[14px] block my-3"
+                    >عن سلسلة</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-white text-[14px] block my-3"
+                    >الخدمات</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-white text-[14px] block my-3"
+                    >الباقات</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:col-span-3 col-span-12 lg:my-3">
+            <div class="lg:mt-[60px] mt-[20px] lg:px-9">
+              <h5 class="text-[#93A8E5] SF-medium text-[16px]">روابط سريعة</h5>
+              <ul class="my-5">
+                <li>
+                  <a href="" class="text-white text-[14px] block my-3"
+                    >تسجيل الشركات</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-white text-[14px] block my-3"
+                    >الشروط والاحكام</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-white text-[14px] block my-3"
+                    >اتصل بنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:col-span-3 col-span-12 lg:my-3">
+            <div class="flex lg:items-end flex-col lg:mt-[60px] mt-[20px]">
+              <h5 class="text-[#93A8E5] SF-medium">للتواصل المباشر</h5>
+              <ul class="lg:my-8 my-2">
+                <li>
+                  <a
+                    href=""
+                    class="flex items-center lg:justify-end gap-2 my-3"
+                  >
+                    <span class="text-white" style="direction: ltr"
+                      >+9665912345678</span
+                    >
+                    <i class="icon-phone-call text-[#93A8E5] text-[20px]"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="flex items-center lg:justify-end gap-2 my-3"
+                  >
+                    <span class="text-white">info@selsela.net</span>
+                    <i class="icon-at-sign text-[#93A8E5] text-[20px]"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex lg:items-end flex-col mt-[10px]">
+              <h5 class="text-[#93A8E5] SF-medium">تابعنا علي</h5>
+              <ul class="my-3 flex items-center gap-3">
+                <li class="group">
+                  <a
+                    href=""
+                    class="group-hover:bg-primaryOrange group-hover:border-primaryOrange flex items-center justify-center w-[45px] h-[45px] border border-[#EBF1F5] rounded-full"
+                  >
+                    <i class="icon-instagram text-[#EBF1F5] text-[20px]"></i>
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="group-hover:bg-primaryOrange group-hover:border-primaryOrange flex items-center justify-center w-[45px] h-[45px] border border-[#EBF1F5] rounded-full"
+                  >
+                    <i class="icon-linkedin2 text-[#EBF1F5] text-[20px]"></i>
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="group-hover:bg-primaryOrange group-hover:border-primaryOrange flex items-center justify-center w-[45px] h-[45px] border border-[#EBF1F5] rounded-full"
+                  >
+                    <i class="icon-twitter text-[#EBF1F5] text-[20px]"></i>
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="group-hover:bg-primaryOrange group-hover:border-primaryOrange flex items-center justify-center w-[45px] h-[45px] border border-[#EBF1F5] rounded-full"
+                  >
+                    <i class="icon-facebook text-[#EBF1F5] text-[20px]"></i>
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="group-hover:bg-primaryOrange group-hover:border-primaryOrange flex items-center justify-center w-[45px] h-[45px] border border-[#EBF1F5] rounded-full"
+                  >
+                    <i class="icon-whatsapp text-[#EBF1F5] text-[20px]"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
-    <div class="p-4 bg-[#3B3B4F] text-center rounded-[15px]">
-      <p class="text-white">
+    <div class="p-4 bg-[#3B3B4F] text-center">
+      <p class="text-white text-[14px]">
         جميع الحقوق محفوظة لصالح موقع سلسلة للخدمات الالكترونية @ 2024
       </p>
     </div>
@@ -321,7 +584,7 @@
     <!-- Plugin Flowbite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <!-- Plugin Animation Page -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <!-- Plugin Text Animation -->
     <script src="./js/script.js"></script>
 
@@ -353,6 +616,19 @@
           },
         },
       };
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        AOS.init({
+          duration: 1000,
+          once: true,
+        });
+      });
+
+      // Ensure refresh for animations to work on load
+      window.addEventListener("load", () => {
+        AOS.refresh();
+      });
     </script>
   </body>
 </html>

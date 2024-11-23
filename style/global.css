@@ -65,10 +65,6 @@ a, img, button {
   transition: 0.5s;
 }
 
-img:hover {
-  transform: scale(1.1);
-}
-
 button:hover {
   transform: scale(0.9);
 }

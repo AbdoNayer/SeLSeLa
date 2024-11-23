@@ -40,7 +40,7 @@ $(document).ready(function () {
   });
 
   // Click Open Nav Mobile
-  $(document).on("click", ".click-nav", function () {
+  $(document).on("click", ".click-nav, .overlay", function () {
     $(".handle").toggleClass("closed");
     $(".list-head").toggleClass("!translate-x-[0%]");
     $(".overlay").toggleClass("translate-x-[-100%]");

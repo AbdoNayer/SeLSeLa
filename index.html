@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Title Page -->
+    <title>SelSela</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="./images/fav-icon.png" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="HandheldFriendly" content="true" />
+
+    <!-- Fancybox CSS -->
+    <meta name="theme-color" content="#121320" />
+    <meta name="msapplication-navbutton-color" content="#121320" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320" />
+
+    <!-- CSS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS OwlCarousel 2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <!-- CSS Flowbite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="./icons/icon.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style/global.css" />
+  </head>
+  <body class="lg:pb-0 pb-[50px]">
+    <div
+      class="overlay fixed top-0 right-0 w-full h-full bg-overlay translate-x-[-100%] transition duration-700 ease-in-out z-[998]"
+    ></div>
+
+    <!-- Loading App -->
+    <div class="loader w-full h-full fixed top-0 right-0 z-[99999]">
+      <div
+        class="spinner w-[60px] h-[60px] absolute top-0 bottom-0 right-0 left-0 m-auto z-[9]"
+      ></div>
+    </div>
+
+    <!-- Contact Fixed -->
+    <a
+      href=""
+      target="_blank"
+      class="bg-[#26b251] w-[50px] text-[22px] h-[50px] flex items-center justify-center text-white rounded-full fixed bottom-[25px] ltr:right-[25px] rtl:left-[25px] z-[999]"
+      ><i class="icon-whatsapp"></i
+    ></a>
+
+    <!-- BTN Scroll Top -->
+    <button
+      class="fix-up bg-primaryOrange w-[50px] h-[50px] flex items-center justify-center text-white rounded-full fixed bottom-[25px] rtl:right-[25px] ltr:left-[25px] z-[999]"
+    >
+      <i class="icon-chevron-up text-white text-[22px]"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="py-5">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center justify-between lg:w-auto w-full">
+            <!-- Logo -->
+            <a href="index.html"><img src="./images/logo.png" alt="" /></a>
+            <!-- Click BTN On Mobile Open Nav  -->
+            <div class="click-nav lg:hidden block">
+              <div class="handle bg-primary"></div>
+              <div class="handle bg-primary"></div>
+              <div class="handle bg-primary"></div>
+            </div>
+          </div>
+          <div
+            class="list-head flex lg:items-center lg:flex-1 lg:py-0 py-6 lg:justify-between lg:flex-row flex-col lg:!translate-x-[0] rtl:translate-x-[100%] ltr:translate-x-[-100%] transition duration-700 ease-in-out lg:relative lg:w-auto lg:h-auto lg:bg-transparent bg-white fixed top-0 rtl:right-0 ltr:left-0 w-[300px] h-screen z-[999]"
+          >
+            <div class="lg:block hidden"></div>
+            <ul
+              class="nav-list-header flex items-center gap-5 lg:flex-row flex-col"
+            >
+              <li class="active lg:w-auto w-full">
+                <a
+                  href="index.html"
+                  data-value="Home"
+                  class="lg:p-[10px] px-[20px] py-[10px] text-[14px]"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="lg:w-auto w-full">
+                <a
+                  href=""
+                  data-value="Home"
+                  class="lg:p-[10px] px-[20px] py-[10px] text-[14px]"
+                  >الخدمات</a
+                >
+              </li>
+              <li class="lg:w-auto w-full">
+                <a
+                  href=""
+                  data-value="Home"
+                  class="lg:p-[10px] px-[20px] py-[10px] text-[14px]"
+                  >المميزات</a
+                >
+              </li>
+              <li class="lg:w-auto w-full">
+                <a
+                  href=""
+                  data-value="Home"
+                  class="lg:p-[10px] px-[20px] py-[10px] text-[14px]"
+                  >الباقات</a
+                >
+              </li>
+              <li class="lg:w-auto w-full">
+                <a
+                  href=""
+                  data-value="Home"
+                  class="lg:p-[10px] px-[20px] py-[10px] text-[14px]"
+                  >عن سلسلة</a
+                >
+              </li>
+              <li class="lg:w-auto w-full">
+                <a
+                  href=""
+                  data-value="Home"
+                  class="lg:p-[10px] px-[20px] py-[10px] text-[14px]"
+                  >اتصل بنا</a
+                >
+              </li>
+            </ul>
+            <div class="flex items-center justify-center lg:mt-0 mt-9 gap-7">
+              <a href="" class="text-[14px]">تسجيل دخول</a>
+              <a
+                href=""
+                class="bg-primaryOrange SF-medium text-[14px] relative text-white rounded-full shadow-lg px-6 py-3 before:content-[''] before:absolute before:top-[4px] before:right-0 before:w-full before:h-full before:rounded-full before:bg-[#E97652] before:opacity-[15%]"
+                >الاشتراك الأن</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="min-h-[800px]"></div>
+
+    <!-- Footer -->
+    <footer class="bg-primary pt-3 rounded-[15px]">
+      <div class="container">
+        <div class="grid grid-cols-12 lg:gap-5 py-6">
+          <div class="lg:col-span-4 col-span-12 lg:my-3"></div>
+        </div>
+      </div>
+    </footer>
+    <div class="p-4 bg-[#3B3B4F] text-center rounded-[15px]">
+      <p class="text-white">
+        جميع الحقوق محفوظة لصالح موقع سلسلة للخدمات الالكترونية @ 2024
+      </p>
+    </div>
+
+    <!-- Plugin Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Plugin OwlCarousel 2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- Plugin TailwindCss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Plugin Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- Plugin Animation Page -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Plugin Text Animation -->
+    <script src="./js/script.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "1.5rem",
+              sm: "1rem",
+              lg: "2rem",
+              xl: "2rem",
+              "2xl": "3rem",
+            },
+          },
+          extend: {
+            boxShadow: {
+              custom:
+                "rgba(17, 17, 26, 0.1) 0px -13px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
+            },
+            colors: {
+              primary: "#23243A",
+              primaryOrange: "#E97652",
+              primaryYellow: "#F9D78D",
+              secondary: "#93A8E5",
+              overlay: "rgba(0, 0, 0, 0.4)",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>

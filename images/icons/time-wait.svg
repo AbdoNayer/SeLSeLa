@@ -1,0 +1,13 @@
+<svg id="Group_43336" data-name="Group 43336" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_37085" data-name="Path 37085" d="M246,235a11,11,0,1,1-11-11A11,11,0,0,1,246,235Zm0,0" transform="translate(-224 -224)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_7" data-name="Mask Group 7" clip-path="url(#clip-path)">
+    <g id="__TEMP__SVG__" transform="translate(-0.001 0)">
+      <path id="Path_37242" data-name="Path 37242" d="M10.187,17.714a6.978,6.978,0,0,1-4.95-2.05l4.95-4.95v-7a7,7,0,0,1,0,14Z" transform="translate(0.813 0.286)"/>
+      <path id="Path_37243" data-name="Path 37243" d="M22.743,11.743a11,11,0,1,1-11-11A11,11,0,0,1,22.743,11.743Zm-2,0a9,9,0,1,1-9-9,9,9,0,0,1,9,9Z" transform="translate(-0.743 -0.743)" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

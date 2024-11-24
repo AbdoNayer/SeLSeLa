@@ -18,7 +18,7 @@ $(window).on("load", function () {
   $("body").css("overflow-y", "auto");
 
   // Animation Page
-  // AOS.init();
+  AOS.init();
 });
 
 $(document).ready(function () {
@@ -48,32 +48,32 @@ $(document).ready(function () {
   });
 
   // Slider Home
-  $(".sliderHome").owlCarousel({
+  $(".sliderFeatures").owlCarousel({
     loop: false,
-    margin: 1000,
+    margin: 20,
     center: false,
-    autoplay: true,
-    touchDrag: false,
-    mouseDrag: false,
-    autoplayTimeout: 7000,
+    autoplay: false,
+    touchDrag: true,
+    mouseDrag: true,
     smartSpeed: 1000,
-    animateOut: "fadeOut",
-    dragEndSpeed: 7000,
-    pagination: true,
-    nav: false,
+    pagination: false,
+    nav: true,
     navText: [
-      '<i class="icon-arrow-left"></i>',
-      '<i class="icon-arrow-right"></i>',
+      '<i class="icon-chevron-left"></i>',
+      '<i class="icon-chevron-right"></i>',
     ],
     responsive: {
       0: {
         items: 1,
       },
       900: {
-        items: 1,
+        items: 2,
       },
       1000: {
-        items: 1,
+        items: 3,
+      },
+      1200: {
+        items: 4,
       },
     },
   });

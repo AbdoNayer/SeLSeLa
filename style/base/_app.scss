@@ -134,75 +134,32 @@
   }
 }
 
-// Slider Home
-.main-body-slider {
-  #sliderHome {
-    .owl-stage-outer {
-      overflow: initial !important;
-    }
-    .owl-dots {
+// Slider Features
+.sliderFeatures {
+  .owl-dots {
+    display: none;
+  }
+  .owl-nav {
+    @include positionItem(absolute, 50%, initial, initial, -200px, translateY(-50%));
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px;
+    button {
+      width: 55px;
+      height: 55px;
+      background-color: rgba(233, 118, 82, 20%) !important;
+      color: #e97652 !important;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      position: absolute;
-      right: 0;
-      bottom: 20px;
-      width: 100%;
-      button {
-        width: 20px;
-        height: 7px;
-        border-radius: 50px;
-        background-color: #fff;
-        margin: 0 3px;
-        opacity: 0.5;
-        &.active {
-          width: 35px;
-          opacity: 1;
-        }
+      &:hover {
+        background-color: #e97652 !important;
+        color: #fff !important;
       }
-    }
-    .owl-item.active {
-      .item {
-        img {
-          transition: 1s;
-          animation-name: translateInfo;
-          animation-fill-mode: both;
-          animation-duration: 1s;
-          animation-delay: 1s;
-        }
-      }
-      .over-info {
-        h1,
-        p,
-        span {
-          transition: 1s;
-          animation-name: translateInfo;
-          animation-fill-mode: both;
-        }
-        h1 {
-          animation-duration: 1s;
-          animation-delay: 1s;
-        }
-        p {
-          animation-duration: 1.5s;
-          animation-delay: 1.5s;
-        }
-        span {
-          animation-duration: 2s;
-          animation-delay: 2s;
-        }
-      }
-    }
-    @keyframes translateInfo {
-      from {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(50px);
-      }
-      to {
-        opacity: 1;
-        visibility: initial;
-        transform: translateY(0px);
+      i {
+        font-size: 30px;
       }
     }
   }
@@ -218,5 +175,15 @@ header {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .list-head {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    will-change: scroll-position;
+    contain: size style layout;
   }
 }

@@ -47,7 +47,7 @@ $(document).ready(function () {
     $("body").toggleClass("overflow-hidden");
   });
 
-  // Slider Home
+  // Slider Features
   $(".sliderFeatures").owlCarousel({
     loop: false,
     margin: 20,
@@ -74,6 +74,35 @@ $(document).ready(function () {
       },
       1200: {
         items: 4,
+      },
+    },
+  });
+
+  // Slider What Said
+  $(".sliderWhatSaid").owlCarousel({
+    loop: true,
+    margin: 10,
+    center: true,
+    // autoWidth:true,
+    autoplay: false,
+    touchDrag: true,
+    mouseDrag: true,
+    smartSpeed: 1000,
+    pagination: false,
+    nav: true,
+    navText: [
+      '<i class="icon-chevron-left"></i>',
+      '<i class="icon-chevron-right"></i>',
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      900: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
       },
     },
   });

@@ -299,6 +299,10 @@ input[type=number] {
   display: none;
 }
 
+header .nav-list-header li.active a {
+  color: #e97652 !important;
+}
+
 .sliderFeatures .owl-dots {
   display: none;
 }
@@ -307,7 +311,7 @@ input[type=number] {
   top: 50%;
   bottom: initial;
   right: initial;
-  left: -200px;
+  left: initial;
   transform: translateY(-50%);
   margin: auto;
   display: flex;
@@ -333,8 +337,63 @@ input[type=number] {
   font-size: 30px;
 }
 
-header .nav-list-header li.active a {
+.sliderWhatSaid .owl-dots {
+  display: none;
+}
+.sliderWhatSaid .owl-nav {
+  position: absolute;
+  top: -100px;
+  display: flex !important;
+  gap: 30px;
+  padding: 0 10px;
+}
+.sliderWhatSaid .owl-nav button {
+  width: 45px;
+  height: 45px;
+  background-color: rgba(233, 118, 82, 0.2) !important;
   color: #e97652 !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sliderWhatSaid .owl-nav button:hover {
+  background-color: #e97652 !important;
+  color: #fff !important;
+}
+.sliderWhatSaid .owl-nav button i {
+  font-size: 30px;
+}
+
+.pulsating-circle:before {
+  z-index: 9;
+  animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.9);
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+.bg-gradient {
+  background: linear-gradient(to bottom, #ffffff 0%, rgba(249, 215, 141, 0.1529411765) 100%);
+}
+
+html[dir=rtl] .sliderFeatures .owl-nav {
+  left: -200px;
+}
+html[dir=rtl] .sliderWhatSaid .owl-nav {
+  left: 0px;
+}
+
+html[dir=ltr] .sliderFeatures .owl-nav {
+  right: -200px;
+}
+html[dir=ltr] .sliderWhatSaid .owl-nav {
+  right: 0px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -344,5 +403,27 @@ header .nav-list-header li.active a {
     -webkit-overflow-scrolling: touch;
     will-change: scroll-position;
     contain: size style layout;
+  }
+  .sliderFeatures .owl-nav {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    bottom: -90px;
+    top: initial;
+    transform: initial;
+  }
+  html[dir=rtl] .sliderFeatures .owl-nav {
+    left: 0px;
+  }
+  html[dir=ltr] .sliderFeatures .owl-nav {
+    right: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sliderWhatSaid .owl-nav {
+    top: 100%;
+    justify-content: center;
+    width: 100%;
+    margin-top: 12px;
   }
 }/*# sourceMappingURL=global.css.map */

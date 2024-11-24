@@ -31,6 +31,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
     />
+    <!-- CSS Fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <!-- CSS Flowbite -->
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
@@ -493,154 +498,226 @@
       </div>
     </div>
 
-    <!-- Section Features -->
-    <div class="py-[150px]">
-      <div class="container relative">
-        <div
-          class="absolute top-[50%] rtl:left-0 ltr:right-0 m-auto translate-y-[-50%] bg-gradient-to-r from-white to-primaryYellow/30 rounded-full w-[790px] h-[790px]"
-        ></div>
-        <div class="mb-[50px] text-center relative">
-          <div class="flex items-center justify-center gap-3">
-            <img src="./images/shape-title.png" alt="" />
-            <h5 class="SF-bold text-primary text-[30px]">مميزاتنا</h5>
+    <!-- Merge Two Section -->
+    <div class="relative">
+      <img
+        src="./images/road.png"
+        class="absolute right-0 left-0 m-auto"
+        alt=""
+      />
+      <!-- Section Features -->
+      <div class="max-[700px]:py-[100px] py-[250px] relative">
+        <div class="container relative">
+          <div
+            class="max-[700px]:hidden absolute top-[50%] rtl:left-0 ltr:right-0 m-auto translate-y-[-50%] bg-gradient-to-r from-white to-primaryYellow/30 rounded-full w-[790px] h-[790px]"
+          ></div>
+          <div class="mb-[50px] text-center relative">
+            <div class="flex items-center justify-center gap-3">
+              <img src="./images/shape-title.png" alt="" />
+              <h5 class="SF-bold text-primary text-[30px]">مميزاتنا</h5>
+            </div>
+            <p class="text-primary text-[16px] mt-4">
+              انت معنا في ايدي امينة , كل ما تحتاجة في مكان واحد
+            </p>
           </div>
-          <p class="text-primary text-[16px] mt-4">
-            انت معنا في ايدي امينة , كل ما تحتاجة في مكان واحد
-          </p>
+          <div
+            id="sliderFeatures"
+            class="owl-carousel owl-theme sliderFeatures px-[0] min-[1280px]:px-[10px] relative min-[1280px]:left-[300px] pt-6"
+          >
+            <div class="item">
+              <div
+                style="direction: rtl"
+                class="bg-white p-3 overflow-hidden border rounded-[25px] border border-[#E6E9F4]"
+              >
+                <div class="overflow-hidden w-full rounded-[25px] h-[230px]">
+                  <img
+                    src="https://i.ibb.co/Xp1Ckk4/11123.png"
+                    class="w-full h-full"
+                    alt=""
+                  />
+                </div>
+                <div class="p-3">
+                  <h5 class="SF-bold text-primary text-[18px]">
+                    انجاز معاملاتك
+                  </h5>
+                  <p class="text-primary/75 mt-2 leading-6 text-[14px]">
+                    تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
+                    المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
+                    مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div
+                style="direction: rtl"
+                class="bg-white p-3 overflow-hidden border rounded-[25px] border border-[#E6E9F4]"
+              >
+                <div class="overflow-hidden w-full rounded-[25px] h-[230px]">
+                  <img
+                    src="https://i.ibb.co/fp7pp5H/1123.png"
+                    class="w-full h-full"
+                    alt=""
+                  />
+                </div>
+                <div class="p-3">
+                  <h5 class="SF-bold text-primary text-[18px]">خدمات متعدد</h5>
+                  <p class="text-primary/75 mt-2 leading-6 text-[14px]">
+                    تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
+                    المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
+                    مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div
+                style="direction: rtl"
+                class="bg-white p-3 overflow-hidden border rounded-[25px] border border-[#E6E9F4]"
+              >
+                <div class="overflow-hidden w-full rounded-[25px] h-[230px]">
+                  <img
+                    src="https://i.ibb.co/Sd3SNmS/123.png"
+                    class="w-full h-full"
+                    alt=""
+                  />
+                </div>
+                <div class="p-3">
+                  <h5 class="SF-bold text-primary text-[18px]">سرعة انجاز</h5>
+                  <p class="text-primary/75 mt-2 leading-6 text-[14px]">
+                    تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
+                    المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
+                    مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div
+                style="direction: rtl"
+                class="bg-white p-3 overflow-hidden border rounded-[25px] border border-[#E6E9F4]"
+              >
+                <div class="overflow-hidden w-full rounded-[25px] h-[230px]">
+                  <img
+                    src="https://i.ibb.co/fp7pp5H/1123.png"
+                    class="w-full h-full"
+                    alt=""
+                  />
+                </div>
+                <div class="p-3">
+                  <h5 class="SF-bold text-primary text-[18px]">خدمات متعدد</h5>
+                  <p class="text-primary/75 mt-2 leading-6 text-[14px]">
+                    تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
+                    المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
+                    مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div
+                style="direction: rtl"
+                class="bg-white p-3 overflow-hidden border rounded-[25px] border border-[#E6E9F4]"
+              >
+                <div class="overflow-hidden w-full rounded-[25px] h-[230px]">
+                  <img
+                    src="https://i.ibb.co/fp7pp5H/1123.png"
+                    class="w-full h-full"
+                    alt=""
+                  />
+                </div>
+                <div class="p-3">
+                  <h5 class="SF-bold text-primary text-[18px]">خدمات متعدد</h5>
+                  <p class="text-primary/75 mt-2 leading-6 text-[14px]">
+                    تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
+                    المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
+                    مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div
+                style="direction: rtl"
+                class="bg-white p-3 overflow-hidden border rounded-[25px] border border-[#E6E9F4]"
+              >
+                <div class="overflow-hidden w-full rounded-[25px] h-[230px]">
+                  <img
+                    src="https://i.ibb.co/Sd3SNmS/123.png"
+                    class="w-full h-full"
+                    alt=""
+                  />
+                </div>
+                <div class="p-3">
+                  <h5 class="SF-bold text-primary text-[18px]">سرعة انجاز</h5>
+                  <p class="text-primary/75 mt-2 leading-6 text-[14px]">
+                    تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
+                    المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
+                    مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div
-          id="sliderFeatures"
-          class="owl-carousel owl-theme sliderFeatures px-[0] min-[1280px]:px-[10px] relative min-[1280px]:left-[300px] pt-6"
-        >
-          <div class="item">
-            <div
-              style="direction: rtl"
-              class="bg-white p-3 overflow-hidden border rounded-[25px] border border-[#E6E9F4]"
-            >
-              <div class="overflow-hidden w-full rounded-[25px] h-[230px]">
-                <img
-                  src="https://i.ibb.co/Xp1Ckk4/11123.png"
-                  class="w-full h-full"
-                  alt=""
-                />
-              </div>
-              <div class="p-3">
-                <h5 class="SF-bold text-primary text-[18px]">انجاز معاملاتك</h5>
-                <p class="text-primary/75 mt-2 leading-6 text-[14px]">
+      </div>
+
+      <!-- Section Video -->
+      <div class="py-[40px] relative">
+        <div class="container">
+          <div class="text-center">
+            <div class="flex items-center justify-center gap-3">
+              <h5 class="SF-bold text-primary text-[30px]">
+                فيديو قصير بعرفك عنا الكثير
+              </h5>
+              <img src="./images/imoj.png" alt="" />
+            </div>
+            <img src="./images/arrow.png" class="m-auto mt-3" alt="" />
+          </div>
+          <div class="grid grid-cols-12 items-center gap-5 mt-9">
+            <div class="lg:col-span-6 col-span-12 max-[1023px]:order-2">
+              <div
+                class="bg-[#EBF1F5] rounded-[45px] lg:p-[50px] p-[20px] max-[600px]:text-center"
+              >
+                <h3 class="SF-bold text-primary text-[24px] max-w-[300px]">
+                  مع سلسلة للخدمات وانت في بيتك انجز مهامك
+                </h3>
+                <p
+                  class="text-primary/75 mt-6 leading-7 text-[15px] max-w-[600px] lg:h-[170px] overflow-y-auto"
+                >
                   تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
                   المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
-                  مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
+                  مكان تتميز الخدمة بالسرية والأمان تقدم من قبل خبراء في التقنية
+                  ، أكثر خبرة ومعرفة ، وتوفر على المستفيد وقته وجهده وتتيح له
+                  الخدمة على مدار الساعة وفي أي مكان تتميز الخدمة بالسرية
+                  والأمان تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ،
+                  وتوفر على المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة
+                  وفي أي مكان تتميز الخدمة بالسرية والأمان
                 </p>
+                <div class="flex items-center justify-end mt-5">
+                  <img src="./images/tree3.png" alt="" />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div
-              style="direction: rtl"
-              class="bg-white p-3 overflow-hidden border rounded-[25px] border border-[#E6E9F4]"
-            >
-              <div class="overflow-hidden w-full rounded-[25px] h-[230px]">
-                <img
-                  src="https://i.ibb.co/fp7pp5H/1123.png"
-                  class="w-full h-full"
-                  alt=""
-                />
-              </div>
-              <div class="p-3">
-                <h5 class="SF-bold text-primary text-[18px]">خدمات متعدد</h5>
-                <p class="text-primary/75 mt-2 leading-6 text-[14px]">
-                  تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
-                  المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
-                  مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              style="direction: rtl"
-              class="bg-white p-3 overflow-hidden border rounded-[25px] border border-[#E6E9F4]"
-            >
-              <div class="overflow-hidden w-full rounded-[25px] h-[230px]">
-                <img
-                  src="https://i.ibb.co/Sd3SNmS/123.png"
-                  class="w-full h-full"
-                  alt=""
-                />
-              </div>
-              <div class="p-3">
-                <h5 class="SF-bold text-primary text-[18px]">سرعة انجاز</h5>
-                <p class="text-primary/75 mt-2 leading-6 text-[14px]">
-                  تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
-                  المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
-                  مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              style="direction: rtl"
-              class="bg-white p-3 overflow-hidden border rounded-[25px] border border-[#E6E9F4]"
-            >
-              <div class="overflow-hidden w-full rounded-[25px] h-[230px]">
-                <img
-                  src="https://i.ibb.co/fp7pp5H/1123.png"
-                  class="w-full h-full"
-                  alt=""
-                />
-              </div>
-              <div class="p-3">
-                <h5 class="SF-bold text-primary text-[18px]">خدمات متعدد</h5>
-                <p class="text-primary/75 mt-2 leading-6 text-[14px]">
-                  تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
-                  المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
-                  مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              style="direction: rtl"
-              class="bg-white p-3 overflow-hidden border rounded-[25px] border border-[#E6E9F4]"
-            >
-              <div class="overflow-hidden w-full rounded-[25px] h-[230px]">
-                <img
-                  src="https://i.ibb.co/fp7pp5H/1123.png"
-                  class="w-full h-full"
-                  alt=""
-                />
-              </div>
-              <div class="p-3">
-                <h5 class="SF-bold text-primary text-[18px]">خدمات متعدد</h5>
-                <p class="text-primary/75 mt-2 leading-6 text-[14px]">
-                  تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
-                  المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
-                  مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              style="direction: rtl"
-              class="bg-white p-3 overflow-hidden border rounded-[25px] border border-[#E6E9F4]"
-            >
-              <div class="overflow-hidden w-full rounded-[25px] h-[230px]">
-                <img
-                  src="https://i.ibb.co/Sd3SNmS/123.png"
-                  class="w-full h-full"
-                  alt=""
-                />
-              </div>
-              <div class="p-3">
-                <h5 class="SF-bold text-primary text-[18px]">سرعة انجاز</h5>
-                <p class="text-primary/75 mt-2 leading-6 text-[14px]">
-                  تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
-                  المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
-                  مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
-                </p>
+            <div class="lg:col-span-6 col-span-12">
+              <div
+                class="relative overflow-hidden rounded-[45px] w-full h-[450px]"
+              >
+                <img src="./images/video.png" class="w-full h-full" alt="" />
+                <div
+                  class="bg-primary/[67%] absolute top-0 right-0 w-full h-full flex items-center justify-center"
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=z2X2HaTvkl8"
+                    data-fancybox
+                    data-caption="Local Video"
+                    class="flex items-center pulsating-circle justify-center bg-primaryOrange rounded-full w-[60px] h-[60px] relative before:content-[''] before:absolute before:top-[-15px] before:right-[-15px] before:rounded-full before:w-[90px] before:h-[90px] before:bg-primaryOrange/30"
+                  >
+                    <i
+                      class="icon-play3 text-white border-2 rounded-full p-2"
+                    ></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -648,7 +725,207 @@
       </div>
     </div>
 
-    <div class="min-h-[800px]"></div>
+    <!-- Section What Wait -->
+    <div class="bg-gradient pt-[100px]">
+      <div class="container">
+        <div class="grid grid-cols-12 items-center gap-5 mt-9">
+          <div class="lg:col-span-6 col-span-12">
+            <div class="relative overflow-hidden">
+              <img src="./images/man-in.png" class="w-full" alt="" />
+              <img
+                src="./images/tree1.png"
+                class="absolute bottom-0 rtl:left-[40px] ltr:right-[40px] max-[500px]:rtl:left-[0px] max-[500px]:ltr:right-[0px] max-[500px]:max-w-[50px]"
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="500"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div class="py-5 text-center">
+              <h1 class="SF-bold text-primaryOrange text-[50px] mb-4">
+                مـــاذا تنتظر؟
+              </h1>
+              <h3 class="text-[40px] text-primary mb-[20px]">
+                انتهز الفرصة واشترك الان
+              </h3>
+              <p class="text-[18px] text-primary mb-[50px]">
+                للاطلاع واختيار الباقة المناسبة للبزنس الخاص بك
+              </p>
+              <a
+                href=""
+                class="bg-primaryOrange SF-medium text-[18px] relative text-white rounded-full shadow-lg h-[60px] w-[230px] m-auto flex items-center justify-center before:content-[''] before:absolute before:top-[4px] before:right-0 before:w-full before:h-full before:rounded-full before:bg-[#E97652] before:opacity-[15%]"
+                >عرض التفاصيل</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- What They Said About Us -->
+    <div
+      class="relative py-[100px] lg:mb-[60px] lg:mt-9 flex items-center justify-center lg:min-h-[1000px]"
+    >
+      <img
+        src="./images/shape2.png"
+        class="w-[90%] absolute top-[50%] translate-y-[-50%] right-0 left-0 m-auto"
+        alt=""
+      />
+      <div class="container relative">
+        <div
+          class="backdrop-blur-[10px] bg-white/70 border border-[#93A8E5]/[40%] rounded-[60px] p-9"
+        >
+          <div class="my-5 max-[500px]:text-center">
+            <p class="text-primary text-[18px]">عملاءنا سر نجاحنا ونفخر بهم</p>
+            <h1 class="SF-bold text-primary text-[38px]">ماذا قالوا عنا</h1>
+          </div>
+          <div
+            id="sliderWhatSaid"
+            class="owl-carousel owl-theme sliderWhatSaid relative lg:px-[50px] my-9"
+          >
+            <div class="item">
+              <div
+                style="direction: rtl"
+                class="bg-white p-6 overflow-hidden border rounded-[15px] border border-[#E6E9F4]"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center flex-1 gap-3">
+                    <img
+                      src="https://i.ibb.co/Xp1Ckk4/11123.png"
+                      class="!w-[55px] !h-[55px] rounded-full"
+                      alt=""
+                    />
+                    <h5 class="SF-bold text-primary text-[18px]">
+                      محمد عبد العزيز
+                    </h5>
+                  </div>
+                  <i
+                    class="icon-quotes-left text-[#93A8E5]/[23%] text-[60px]"
+                  ></i>
+                </div>
+                <div class="py-3">
+                  <p class="text-primary/75 mt-2 leading-7 text-[14px]">
+                    تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
+                    المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
+                    مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
+                  </p>
+                  <div class="flex items-center justify-end mt-4">
+                    <i
+                      class="icon-quotes-left text-[#93A8E5]/[23%] text-[20px]"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div
+                style="direction: rtl"
+                class="bg-white p-6 overflow-hidden border rounded-[15px] border border-[#E6E9F4]"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center flex-1 gap-3">
+                    <img
+                      src="https://i.ibb.co/Xp1Ckk4/11123.png"
+                      class="!w-[55px] !h-[55px] rounded-full"
+                      alt=""
+                    />
+                    <h5 class="SF-bold text-primary text-[18px]">
+                      محمد عبد العزيز
+                    </h5>
+                  </div>
+                  <i
+                    class="icon-quotes-left text-[#93A8E5]/[23%] text-[60px]"
+                  ></i>
+                </div>
+                <div class="py-3">
+                  <p class="text-primary/75 mt-2 leading-7 text-[14px]">
+                    تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
+                    المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
+                    مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
+                  </p>
+                  <div class="flex items-center justify-end mt-4">
+                    <i
+                      class="icon-quotes-left text-[#93A8E5]/[23%] text-[20px]"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div
+                style="direction: rtl"
+                class="bg-white p-6 overflow-hidden border rounded-[15px] border border-[#E6E9F4]"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center flex-1 gap-3">
+                    <img
+                      src="https://i.ibb.co/Xp1Ckk4/11123.png"
+                      class="!w-[55px] !h-[55px] rounded-full"
+                      alt=""
+                    />
+                    <h5 class="SF-bold text-primary text-[18px]">
+                      محمد عبد العزيز
+                    </h5>
+                  </div>
+                  <i
+                    class="icon-quotes-left text-[#93A8E5]/[23%] text-[60px]"
+                  ></i>
+                </div>
+                <div class="py-3">
+                  <p class="text-primary/75 mt-2 leading-7 text-[14px]">
+                    تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
+                    المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
+                    مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
+                  </p>
+                  <div class="flex items-center justify-end mt-4">
+                    <i
+                      class="icon-quotes-left text-[#93A8E5]/[23%] text-[20px]"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div
+                style="direction: rtl"
+                class="bg-white p-6 overflow-hidden border rounded-[15px] border border-[#E6E9F4]"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center flex-1 gap-3">
+                    <img
+                      src="https://i.ibb.co/Xp1Ckk4/11123.png"
+                      class="!w-[55px] !h-[55px] rounded-full"
+                      alt=""
+                    />
+                    <h5 class="SF-bold text-primary text-[18px]">
+                      محمد عبد العزيز
+                    </h5>
+                  </div>
+                  <i
+                    class="icon-quotes-left text-[#93A8E5]/[23%] text-[60px]"
+                  ></i>
+                </div>
+                <div class="py-3">
+                  <p class="text-primary/75 mt-2 leading-7 text-[14px]">
+                    تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
+                    المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي
+                    مكان تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
+                  </p>
+                  <div class="flex items-center justify-end mt-4">
+                    <i
+                      class="icon-quotes-left text-[#93A8E5]/[23%] text-[20px]"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-primary pt-3 rounded-tr-[25px] rounded-tl-[25px]">
@@ -813,6 +1090,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Plugin Flowbite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- Plugin Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <!-- Plugin Animation Page -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <!-- Plugin Text Animation -->
@@ -846,6 +1125,15 @@
           },
         },
       };
+    </script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        infinite: false,
+        animationEffect: "zoom-in-out",
+        video: {
+          autoStart: true,
+        },
+      });
     </script>
   </body>
 </html>

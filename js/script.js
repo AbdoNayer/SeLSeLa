@@ -39,12 +39,33 @@ $(document).ready(function () {
     $(window).scrollTop(0);
   });
 
+  // Scroll For Section
+  $(document).on(
+    "click",
+    ".nav-list-header li a, .links-footer li a",
+    function (e) {
+      $("html, body").animate(
+        {
+          scrollTop: $("#" + $(this).data("value")).offset().top - 80,
+        },
+        50
+      );
+      e.preventDefault();
+      if ($(window).width() < 990) {
+        $(".handle").toggleClass("closed");
+        $(".list-head").toggleClass("!translate-x-[0%]");
+        $(".overlay").toggleClass("translate-x-[-100%]");
+        $("body").toggleClass("!overflow-hidden");
+      }
+    }
+  );
+
   // Click Open Nav Mobile
   $(document).on("click", ".click-nav, .overlay", function () {
     $(".handle").toggleClass("closed");
     $(".list-head").toggleClass("!translate-x-[0%]");
     $(".overlay").toggleClass("translate-x-[-100%]");
-    $("body").toggleClass("overflow-hidden");
+    $("body").toggleClass("!overflow-hidden");
   });
 
   // Slider Features

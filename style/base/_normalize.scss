@@ -81,6 +81,19 @@ button{
   }
 }
 
+.bg-gray-900\/50.dark\:bg-gray-900\/80.fixed.inset-0.z-40{
+  display: none !important;
+}
+
+// Bg Gradient
+.bg-gradient {
+  background: linear-gradient(to bottom, #ffffff 0%, #f9d78d27 100%);
+}
+
+.bg-gradien-2 {
+  background: linear-gradient(to bottom, #f9d78d 0%, #e97652 100%);
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Title Page -->
+    <title>SelSela</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="./images/fav-icon.png" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="HandheldFriendly" content="true" />
+
+    <!-- Fancybox CSS -->
+    <meta name="theme-color" content="#121320" />
+    <meta name="msapplication-navbutton-color" content="#121320" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320" />
+
+    <!-- CSS Animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <!-- CSS OwlCarousel 2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <!-- CSS Fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <!-- CSS Flowbite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="./icons/icon.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style/global.css" />
+  </head>
+  <body>
+    <div
+      class="overlay fixed top-0 right-0 w-full h-full bg-overlay translate-x-[-100%] transition duration-700 ease-in-out z-[998]"
+    ></div>
+
+    <!-- Loading App -->
+    <div class="loader w-full h-full fixed top-0 right-0 z-[99999]">
+      <div
+        class="spinner w-[60px] h-[60px] absolute top-0 bottom-0 right-0 left-0 m-auto z-[9]"
+      ></div>
+    </div>
+
+    <!-- Contact Fixed -->
+    <a
+      href=""
+      target="_blank"
+      class="bg-[#26b251] w-[50px] text-[22px] h-[50px] flex items-center justify-center text-white rounded-full fixed bottom-[25px] ltr:right-[25px] rtl:left-[25px] z-[999]"
+      ><i class="icon-whatsapp"></i
+    ></a>
+
+    <!-- BTN Scroll Top -->
+    <button
+      class="fix-up bg-primaryOrange w-[50px] h-[50px] flex items-center justify-center text-white rounded-full fixed bottom-[25px] rtl:right-[25px] ltr:left-[25px] z-[999]"
+    >
+      <i class="icon-chevron-up text-white text-[22px]"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="py-5 sticky top-0 bg-white z-[9998]">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center justify-between lg:w-auto w-full">
+            <!-- Logo -->
+            <a
+              href="index.html"
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="500"
+              ><img src="./images/logo.png" alt=""
+            /></a>
+            <!-- Click BTN On Mobile Open Nav  -->
+            <div class="click-nav lg:hidden block">
+              <div class="handle bg-primary"></div>
+              <div class="handle bg-primary"></div>
+              <div class="handle bg-primary"></div>
+            </div>
+          </div>
+          <div
+            class="list-head flex lg:items-center lg:flex-1 lg:py-0 py-6 justify-between lg:flex-row flex-col lg:!translate-x-[0] rtl:translate-x-[100%] ltr:translate-x-[-100%] transition duration-700 ease-in-out lg:relative lg:w-auto lg:h-auto lg:bg-transparent bg-white fixed top-0 rtl:right-0 ltr:left-0 w-[300px] h-screen z-[999]"
+          >
+            <div class="lg:block hidden"></div>
+            <ul
+              class="nav-list-header flex items-center gap-5 lg:flex-row flex-col"
+            >
+              <li class="lg:w-auto w-full">
+                <a
+                  href="index.html"
+                  class="lg:p-[10px] px-[20px] py-[10px] text-[14px] text-primary"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="active lg:w-auto w-full">
+                <a
+                  href="services.html"
+                  class="lg:p-[10px] px-[20px] py-[10px] text-[14px] text-primary"
+                  >الخدمات</a
+                >
+              </li>
+              <li class="lg:w-auto w-full">
+                <a
+                  href="index.html#Features"
+                  class="lg:p-[10px] px-[20px] py-[10px] text-[14px] text-primary"
+                  >المميزات</a
+                >
+              </li>
+              <li class="lg:w-auto w-full">
+                <a
+                  href="packages.html"
+                  class="lg:p-[10px] px-[20px] py-[10px] text-[14px] text-primary"
+                  >الباقات</a
+                >
+              </li>
+              <li class="lg:w-auto w-full">
+                <a
+                  href="index.html#About"
+                  class="lg:p-[10px] px-[20px] py-[10px] text-[14px] text-primary"
+                  >عن سلسلة</a
+                >
+              </li>
+              <li class="lg:w-auto w-full">
+                <a
+                  href="contact-us.html"
+                  class="lg:p-[10px] px-[20px] py-[10px] text-[14px] text-primary"
+                  >اتصل بنا</a
+                >
+              </li>
+            </ul>
+            <div class="flex items-center justify-center lg:mt-0 mt-9 gap-7">
+              <a href="login.html" class="text-[14px] text-primary"
+                >تسجيل دخول</a
+              >
+              <a
+                href="packages.html"
+                class="bg-primaryOrange SF-medium text-[14px] relative text-white rounded-full shadow-lg px-6 py-3 before:content-[''] before:absolute before:top-[4px] before:right-0 before:w-full before:h-full before:rounded-full before:bg-[#E97652] before:opacity-[15%]"
+                >الاشتراك الأن</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <div class="py-4">
+      <div class="container">
+        <!-- Breadcrumb -->
+        <nav class="flex my-5" aria-label="Breadcrumb">
+          <ol
+            class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
+          >
+            <li class="inline-flex items-center">
+              <a
+                href="index.html"
+                class="inline-flex items-center text-sm text-primary/[66%]"
+              >
+                الرئيسية
+              </a>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <i
+                  class="icon-chevron-left ltr:rotate-180 text-primary/[66%] mx-1"
+                ></i>
+                <span class="ms-1 text-sm SF-bold text-primary md:ms-2"
+                  >الخدمات</span
+                >
+              </div>
+            </li>
+          </ol>
+        </nav>
+        <div
+          class="my-4 relative overflow-hidden bg-[#EBF1F5] p-6 rounded-[13px] flex items-center justify-between"
+        >
+          <div class="max-[600px]:text-center relative z-[9]">
+            <h1 class="SF-bold text-primary text-[30px]">
+              <span class="text-primaryOrange">الخدمات</span>
+              المميزة
+            </h1>
+            <p class="text-primary text-[16px] mt-3">
+              وفرنا مجموعة باقات مميزة تناسب شركتك وطبيعة العمل الأصلي بك
+            </p>
+          </div>
+          <!-- Section Primary Yellow -->
+          <div
+            class="play-circle absolute top-[-80px] rtl:left-[120px] ltr:right-[120px] bg-primaryYellow/[72%] w-[170px] h-[170px] rounded-full flex items-center justify-center before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:z-[0px] before:rounded-full before:w-[200px] before:h-[200px] before:bg-primaryYellow/30"
+          >
+            <div
+              class="bg-primaryYellow w-[90px] h-[90px] rounded-full flex items-center justify-center"
+            >
+              <div
+                class="bg-white w-[30px] h-[30px] rounded-full flex items-center justify-center"
+              ></div>
+            </div>
+          </div>
+          <!-- Section Primary Orange -->
+          <div
+            class="play-circle absolute bottom-[-55px] rtl:left-[80px] ltr:right-[80px] bg-primaryOrange/[72%] w-[100px] h-[100px] rounded-full flex items-center justify-center before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:z-[0px] before:rounded-full before:w-[100px] before:h-[100px] before:bg-primaryOrange/30"
+          >
+            <div
+              class="bg-primaryOrange w-[60px] h-[60px] rounded-full flex items-center justify-center"
+            ></div>
+          </div>
+          <!-- Section Secondary -->
+          <div
+            class="play-circle absolute bottom-[-65px] rtl:left-[250px] ltr:right-[250px] bg-secondary/[72%] w-[130px] h-[130px] rounded-full flex items-center justify-center before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:z-[0px] before:rounded-full before:w-[140px] before:h-[140px] before:bg-secondary/30"
+          >
+            <div
+              class="bg-secondary w-[60px] h-[60px] rounded-full flex items-center justify-center"
+            >
+              <div
+                class="bg-white w-[20px] h-[20px] rounded-full flex items-center justify-center"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-2">
+        <div class="container">
+          <div class="bg-[#EBF1F5] p-6 rounded-[13px]">
+            <!-- Serach For Services -->
+            <form class="flex items-center max-[540px]:flex-col gap-3">
+              <div
+                class="bg-white flex items-center justify-between rounded-full py-4 px-5 flex-1 max-[540px]:w-full"
+              >
+                <div class="flex items-center gap-3">
+                  <button>
+                    <i class="icon-search text-primary/[46%] text-[18px]"></i>
+                  </button>
+                  <input
+                    class="border-0 p-0 text-[#9092AD] text-[13px]"
+                    type="text"
+                    placeholder="ابحث عن الخدمة"
+                  />
+                </div>
+                <span class="text-primary text-[16px]">الغاء</span>
+              </div>
+              <button
+                href="packages.html"
+                class="bg-primaryOrange SF-medium text-[14px] relative text-white rounded-full shadow-lg px-1 w-[100px] max-[540px]:w-full py-4"
+              >
+                بحـــث
+              </button>
+            </form>
+            <!-- Items Services -->
+            <div class="flex flex-wrap my-6">
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/01.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">ابشر</h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/02.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">
+                      البريد السعودي
+                    </h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/03.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">
+                      البريد السعودي
+                    </h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/04.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">
+                      البريد السعودي
+                    </h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/02.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">
+                      البريد السعودي
+                    </h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/03.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">
+                      البريد السعودي
+                    </h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/01.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">ابشر</h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/02.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">
+                      البريد السعودي
+                    </h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/03.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">
+                      البريد السعودي
+                    </h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/04.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">
+                      البريد السعودي
+                    </h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/02.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">
+                      البريد السعودي
+                    </h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/01.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">ابشر</h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/02.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">
+                      البريد السعودي
+                    </h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/03.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">
+                      البريد السعودي
+                    </h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-[20%] max-[1023px]:w-[50%] max-[600px]:w-full p-1 mb-1"
+              >
+                <div class="bg-white rounded-[15px] p-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="rounded-full border overflow-hidden w-[50px] h-[50px]"
+                    >
+                      <img
+                        src="./images/04.png"
+                        class="object-contain w-[50px] h-[50px]"
+                        alt=""
+                      />
+                    </div>
+                    <h4 class="SF-medium text-primary text-[14px]">
+                      البريد السعودي
+                    </h4>
+                  </div>
+                  <div class="flex py-4 px-2 gap-2">
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">12</h5>
+                    </div>
+                    <div
+                      class="bg-gray-200 relative left-[12px] h-[50px] w-[1px]"
+                    ></div>
+                    <div class="w-[50%] max-[500px]:w-full">
+                      <h5 class="text-[#9092AD] text-[12px]">مقدمي الخدمات</h5>
+                      <h5 class="text-primary SF-bold text-[14px] mt-1">224</h5>
+                    </div>
+                  </div>
+                  <button
+                    data-modal-target="service-modal"
+                    data-modal-toggle="service-modal"
+                    class="hover:text-primaryOrange border border-[#F6F8FA] hover:border-primaryOrange SF-medium text-[14px] relative text-[#9092AD] rounded-full shadow-lg w-full h-[45px] flex items-center justify-center"
+                    type="button"
+                  >
+                    عرض الخدمات
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Details Service Modal -->
+    <div
+      id="service-modal"
+      tabindex="-1"
+      class="fixed top-0 left-0 right-0 z-[99999] hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-overlay"
+    >
+      <div class="relative w-full max-w-4xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow">
+          <!-- Modal header -->
+          <div class="flex items-center gap-2 p-4">
+            <button
+              type="button"
+              class="flex items-center gap-3"
+              data-modal-hide="service-modal"
+            >
+              <i
+                class="icon-chevron-right ltr:rotate-180 text-[#9092AD] text-[20px]"
+              ></i>
+              <span class="SF-medium text-primary text-[14px]">رجوع</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-4">
+            <div class="flex items-center justify-center mb-5 gap-3">
+              <img
+                src="./images/03.png"
+                class="w-[60px] h-[60px] object-contain border rounded-full"
+                alt=""
+              />
+              <h4 class="SF-medium text-primary text-[15px]">
+                البريد الالكتروني
+              </h4>
+            </div>
+            <div
+              class="flex items-center justify-center mb-3 lg:gap-x-[50px] gap-3"
+            >
+              <div class="flex items-center gap-1">
+                <h5 class="text-[#9092AD] text-[13px]">الخدمات :</h5>
+                <h5 class="text-primary SF-bold text-[14px]">12</h5>
+              </div>
+              <div class="flex items-center gap-1">
+                <h5 class="text-[#9092AD] text-[13px]">مقدمي الخدمات :</h5>
+                <h5 class="text-primary SF-bold text-[14px]">334</h5>
+              </div>
+            </div>
+            <!-- Serach For Services -->
+            <form class="flex items-center max-[540px]:flex-col gap-3 my-8">
+              <div
+                class="bg-[#EBF1F5] flex items-center justify-between rounded-full py-4 px-5 flex-1 max-[540px]:w-full"
+              >
+                <div class="flex items-center gap-3">
+                  <button>
+                    <i class="icon-search text-primary/[46%] text-[18px]"></i>
+                  </button>
+                  <input
+                    class="border-0 p-0 bg-transparent text-[#9092AD] text-[13px]"
+                    type="text"
+                    placeholder="ابحث عن الخدمة"
+                  />
+                </div>
+                <span class="text-primary text-[14px]">الغاء</span>
+              </div>
+              <button
+                href="packages.html"
+                class="bg-primaryOrange/[14%] SF-medium text-[14px] relative text-primaryOrange rounded-full shadow-lg px-1 w-[100px] max-[540px]:w-full py-4"
+              >
+                بحـــث
+              </button>
+            </form>
+            <!-- Items Services -->
+            <div class="grid grid-cols-12 gap-4 my-6">
+              <div class="lg:col-span-6 col-span-12">
+                <div
+                  class="group duration-150 ease-in-out hover:border-primaryOrange flex items-center gap-3 rounded-[10px] border border-[#EBF1F5] p-3"
+                >
+                  <span
+                    class="w-[10px] h-[10px] rounded-full duration-150 ease-in-out group-hover:bg-primaryOrange bg-[#EBF1F5]"
+                  ></span>
+                  <h6 class="text-[14px] text-primary">مبايعة المركبة</h6>
+                </div>
+              </div>
+              <div class="lg:col-span-6 col-span-12">
+                <div
+                  class="group duration-150 ease-in-out hover:border-primaryOrange flex items-center gap-3 rounded-[10px] border border-[#EBF1F5] p-3"
+                >
+                  <span
+                    class="w-[10px] h-[10px] rounded-full duration-150 ease-in-out group-hover:bg-primaryOrange bg-[#EBF1F5]"
+                  ></span>
+                  <h6 class="text-[14px] text-primary">
+                    تمديد الزيارة للمواطنين والمقيمين
+                  </h6>
+                </div>
+              </div>
+              <div class="lg:col-span-6 col-span-12">
+                <div
+                  class="group duration-150 ease-in-out hover:border-primaryOrange flex items-center gap-3 rounded-[10px] border border-[#EBF1F5] p-3"
+                >
+                  <span
+                    class="w-[10px] h-[10px] rounded-full duration-150 ease-in-out group-hover:bg-primaryOrange bg-[#EBF1F5]"
+                  ></span>
+                  <h6 class="text-[14px] text-primary">تسجيل في ابشر</h6>
+                </div>
+              </div>
+              <div class="lg:col-span-6 col-span-12">
+                <div
+                  class="group duration-150 ease-in-out hover:border-primaryOrange flex items-center gap-3 rounded-[10px] border border-[#EBF1F5] p-3"
+                >
+                  <span
+                    class="w-[10px] h-[10px] rounded-full duration-150 ease-in-out group-hover:bg-primaryOrange bg-[#EBF1F5]"
+                  ></span>
+                  <h6 class="text-[14px] text-primary">
+                    تمديد الزيارة للمواطنين والمقيمين
+                  </h6>
+                </div>
+              </div>
+              <div class="lg:col-span-6 col-span-12">
+                <div
+                  class="group duration-150 ease-in-out hover:border-primaryOrange flex items-center gap-3 rounded-[10px] border border-[#EBF1F5] p-3"
+                >
+                  <span
+                    class="w-[10px] h-[10px] rounded-full duration-150 ease-in-out group-hover:bg-primaryOrange bg-[#EBF1F5]"
+                  ></span>
+                  <h6 class="text-[14px] text-primary">مبايعة المركبة</h6>
+                </div>
+              </div>
+              <div class="lg:col-span-6 col-span-12">
+                <div
+                  class="group duration-150 ease-in-out hover:border-primaryOrange flex items-center gap-3 rounded-[10px] border border-[#EBF1F5] p-3"
+                >
+                  <span
+                    class="w-[10px] h-[10px] rounded-full duration-150 ease-in-out group-hover:bg-primaryOrange bg-[#EBF1F5]"
+                  ></span>
+                  <h6 class="text-[14px] text-primary">تسجيل في ابشر</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary pt-3 rounded-tr-[25px] rounded-tl-[25px]">
+      <div class="container">
+        <div class="grid grid-cols-12 lg:gap-5 py-6">
+          <div class="lg:col-span-3 col-span-12 lg:my-3">
+            <div class="my-4">
+              <a href="index.html" class="mb-9 block"
+                ><img src="./images/logo-footer.png" alt=""
+              /></a>
+              <h5 class="SF-bold text-white text-[14px]">
+                شركة سلسلة لتقديم الخدمات
+              </h5>
+              <p class="text-white text-[12px] mb-9 mt-5 leading-6">
+                تقدم من قبل خبراء في التقنية ، أكثر خبرة ومعرفة ، وتوفر على
+                المستفيد وقته وجهده وتتيح له الخدمة على مدار الساعة وفي أي مكان
+                تتميز الخدمة بالسرية والأمان وفق أفضل الممارسات الدولية
+              </p>
+              <a href="" class="flex items-center gap-3">
+                <i class="icon-map-pin text-[#93A8E5]"></i>
+                <span class="text-white text-[12px] max-w-[200px]"
+                  >المكلة العرية السعودية ٠-ش ارع عبد العزيز بن سعود</span
+                >
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-3 col-span-12 lg:my-3">
+            <div class="lg:mt-[60px] mt-[30px] lg:px-9">
+              <h5 class="text-[#93A8E5] SF-medium text-[16px]">روابط سريعة</h5>
+              <ul class="my-5 links-footer">
+                <li>
+                  <a href="index.html" class="text-white text-[14px] block my-3"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#About"
+                    class="text-white text-[14px] block my-3"
+                    >عن سلسلة</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="text-white text-[14px] block my-3"
+                    >الخدمات</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="packages.html"
+                    class="text-white text-[14px] block my-3"
+                    >الباقات</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:col-span-3 col-span-12 lg:my-3">
+            <div class="lg:mt-[60px] mt-[20px] lg:px-9">
+              <h5 class="text-[#93A8E5] SF-medium text-[16px]">روابط سريعة</h5>
+              <ul class="my-5">
+                <li>
+                  <a href="login.html" class="text-white text-[14px] block my-3"
+                    >تسجيل الشركات</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-white text-[14px] block my-3"
+                    >الشروط والاحكام</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact-us.html"
+                    class="text-white text-[14px] block my-3"
+                    >اتصل بنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:col-span-3 col-span-12 lg:my-3">
+            <div class="flex lg:items-end flex-col lg:mt-[60px] mt-[20px]">
+              <h5 class="text-[#93A8E5] SF-medium">للتواصل المباشر</h5>
+              <ul class="lg:my-8 my-2">
+                <li>
+                  <a
+                    href=""
+                    class="flex items-center lg:justify-end gap-2 my-3"
+                  >
+                    <span class="text-white" style="direction: ltr"
+                      >+9665912345678</span
+                    >
+                    <i class="icon-phone-call text-[#93A8E5] text-[20px]"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="flex items-center lg:justify-end gap-2 my-3"
+                  >
+                    <span class="text-white">info@selsela.net</span>
+                    <i class="icon-at-sign text-[#93A8E5] text-[20px]"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex lg:items-end flex-col mt-[10px]">
+              <h5 class="text-[#93A8E5] SF-medium">تابعنا علي</h5>
+              <ul class="my-3 flex items-center gap-3">
+                <li class="group">
+                  <a
+                    href=""
+                    class="group-hover:bg-primaryOrange group-hover:border-primaryOrange flex items-center justify-center w-[45px] h-[45px] border border-[#EBF1F5] rounded-full"
+                  >
+                    <i class="icon-instagram text-[#EBF1F5] text-[20px]"></i>
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="group-hover:bg-primaryOrange group-hover:border-primaryOrange flex items-center justify-center w-[45px] h-[45px] border border-[#EBF1F5] rounded-full"
+                  >
+                    <i class="icon-linkedin2 text-[#EBF1F5] text-[20px]"></i>
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="group-hover:bg-primaryOrange group-hover:border-primaryOrange flex items-center justify-center w-[45px] h-[45px] border border-[#EBF1F5] rounded-full"
+                  >
+                    <i class="icon-twitter text-[#EBF1F5] text-[20px]"></i>
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="group-hover:bg-primaryOrange group-hover:border-primaryOrange flex items-center justify-center w-[45px] h-[45px] border border-[#EBF1F5] rounded-full"
+                  >
+                    <i class="icon-facebook text-[#EBF1F5] text-[20px]"></i>
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="group-hover:bg-primaryOrange group-hover:border-primaryOrange flex items-center justify-center w-[45px] h-[45px] border border-[#EBF1F5] rounded-full"
+                  >
+                    <i class="icon-whatsapp text-[#EBF1F5] text-[20px]"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="p-4 bg-[#3B3B4F] text-center">
+      <p class="text-white text-[14px]">
+        جميع الحقوق محفوظة لصالح موقع سلسلة للخدمات الالكترونية @ 2024
+      </p>
+    </div>
+
+    <!-- Plugin Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Plugin OwlCarousel 2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- Plugin TailwindCss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Plugin Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- Plugin Animation Page -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Plugin Text Animation -->
+    <script src="./js/script.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "1.5rem",
+              sm: "1rem",
+              lg: "2rem",
+              xl: "2rem",
+              "2xl": "3rem",
+            },
+          },
+          extend: {
+            boxShadow: {
+              custom:
+                "rgba(17, 17, 26, 0.1) 0px -13px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
+            },
+            colors: {
+              primary: "#23243A",
+              primaryOrange: "#E97652",
+              primaryYellow: "#F9D78D",
+              secondary: "#93A8E5",
+              overlay: "rgba(0, 0, 0, 0.4)",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>

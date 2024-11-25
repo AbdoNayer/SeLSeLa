@@ -108,6 +108,25 @@
   }
 }
 
+/* Style RadioButton */
+.radioButton {
+  input {
+    &:checked ~ .checkmark {
+      border: 1px solid #e97652;
+      background-color: #fff !important;
+    }
+  }
+  .checkmark {
+    &:after {
+      transform: scale(0);
+      transition: 0.5s;
+    }
+  }
+  input:checked ~ .checkmark:after {
+    transform: scale(1.1);
+  }
+}
+
 // Click Nav
 .click-nav {
   .handle {
@@ -227,25 +246,23 @@ header {
 }
 
 // Circle Animation
-.pulsating-circle {
+.play-circle {
   &:before {
-    z-index: 9;
-    animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    transform: translateX(-50%) translateY(-50%);
+    animation: pulse-border 1500ms ease-out infinite;
   }
 }
 
-@keyframes pulse-ring {
+@keyframes pulse-border {
   0% {
-    transform: scale(0.9);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
   }
-  80%,
+
   100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
     opacity: 0;
   }
-}
-
-.bg-gradient {
-  background: linear-gradient(to bottom, #ffffff 0%, #f9d78d27 100%);
 }
 
 // Dir
@@ -279,6 +296,7 @@ html[dir="ltr"] {
   }
 }
 
+// Media Screen
 @media screen and (max-width: 1023px) {
   .list-head {
     overflow-x: hidden;
@@ -317,6 +335,7 @@ html[dir="ltr"] {
     }
   }
 }
+
 @media screen and (max-width: 500px) {
   // Slider What Said
   .sliderWhatSaid {

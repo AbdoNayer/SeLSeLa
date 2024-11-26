@@ -332,7 +332,7 @@ html[dir="ltr"] {
 
 // Media Screen
 @media screen and (max-width: 1023px) {
-  .list-head{
+  .list-head, .main-aside{
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;

@@ -157,8 +157,8 @@
       </div>
     </header>
 
-    <!-- Packages -->
-    <div class="py-4">
+    <!-- Sign Up -->
+    <div class="py-4 bg-[#EBF1F5]">
       <div class="container">
         <!-- Breadcrumb -->
         <nav class="flex my-5" aria-label="Breadcrumb">
@@ -179,221 +179,339 @@
                   class="icon-chevron-left ltr:rotate-180 text-primary/[66%] mx-1"
                 ></i>
                 <span class="ms-1 text-sm SF-bold text-primary md:ms-2"
-                  >الباقات</span
+                  >انشاء حساب جديد</span
                 >
               </div>
             </li>
           </ol>
         </nav>
-        <div class="my-4 text-center">
-          <h1 class="SF-bold text-primary text-[30px]">
-            <span class="text-primaryOrange">أختر الباقة</span>
-            المناسبة لشركتك
-          </h1>
-          <p class="text-primary text-[16px] mt-3">
-            وفرنا مجموعة باقات مميزة تناسب شركتك وطبيعة العمل الأصلي بك
-          </p>
-        </div>
-      </div>
-      <div
-        class="bg-[url('./images/bg.png')] bg-cover bg-no-repeat bg-center h-[800px] py-9"
-      >
-        <div class="container my-[50px]">
-          <div class="grid grid-cols-12 gap-5">
-            <div class="lg:col-span-4 col-span-12">
-              <div
-                class="backdrop-blur-[10px] lg:w-[95%] min-h-[560px] relative pt-[130px] w-full bg-white/70 border border-[#93A8E5]/[40%] rounded-[30px] py-4 px-6"
-              >
-                <span
-                  class="bg-primary absolute left-0 right-0 top-[-25px] m-auto p-4 rounded-b-[15px] rtl:rounded-tr-[15px] ltr:rounded-tl-[15px] text-white w-[120px] h-[110px] flex items-center justify-center text-center text-[18px] SF-bold"
-                >
-                  الباقة البرونزية
-                  <strong
-                    class="inline-block absolute top-0 left-[-15px] w-0 h-0 border-solid border-t-[0px] border-r-[0px] border-b-[25px] border-l-[15px] border-t-[transparent] border-r-[transparent] border-b-primary border-l-[transparent]"
-                  ></strong>
-                </span>
-                <div class="text-center">
-                  <h4
-                    class="SF-bold text-primary text-[15px] leading-7 max-w-[200px] m-auto"
-                  >
-                    اشتراك في جميع خدمات الموقع
-                  </h4>
-                  <h1 class="SF-bold text-primary text-[55px] my-4">100</h1>
-                  <h1 class="SF-medium text-primary text-[13px]">
-                    عدد العمالة
-                  </h1>
-                  <h1 class="SF-bold text-primary text-[20px] mt-9 mb-3">
-                    1200
-                  </h1>
-                  <h1 class="SF-medium text-primary text-[13px] pb-9">
-                    ريال سعودي
-                  </h1>
-                  <a
-                    href=""
-                    class="hover:bg-primaryOrange hover:text-white border border-primaryOrange SF-medium text-[15px] relative text-primaryOrange rounded-full shadow-lg w-full h-[50px] flex items-center justify-center mb-4 mt-5"
-                    >اشترك الأن</a
-                  >
-                </div>
-              </div>
+        <div class="py-9 px-4 lg:px-[100px] bg-white rounded-[20px]">
+          <div class="">
+            <div class="mb-4">
+              <h5 class="SF-bold text-primaryOrange text-[17px]">مرحبا بك</h5>
+              <h5 class="SF-bold text-primary text-[22px]">انشاء حساب جديد</h5>
             </div>
-            <div class="lg:col-span-4 col-span-12">
-              <div
-                class="backdrop-blur-[10px] lg:w-[95%] relative pt-[90px] w-full bg-white border border-[#93A8E5]/[40%] rounded-[30px] py-4 px-6"
+            <div class="mb-4">
+              <ul
+                class="tabs-view flex justify-center items-center bg-[#EBF1F5] rounded-full w-full lg:w-[450px]"
+                id="default-tab"
+                data-tabs-toggle="#default-tab-content"
+                role="tablist"
               >
-                <span
-                  class="bg-gradien-2 absolute left-0 right-0 top-[-25px] m-auto p-4 rounded-b-[15px] rtl:rounded-tr-[15px] ltr:rounded-tl-[15px] text-primary w-[120px] h-[110px] flex items-center justify-center text-center text-[18px] SF-bold"
+                <li role="presentation" class="w-[50%]">
+                  <button
+                    class="inline-block p-4 w-full border-l !transform-none !border-l-[#dadada] flex items-center justify-center gap-2 hover:!text-primaryOrange"
+                    id="company-account-tab"
+                    data-tabs-target="#company-account"
+                    type="button"
+                    role="tab"
+                    aria-controls="company-account"
+                    aria-selected="false"
+                  >
+                    <strong
+                      class="box w-[18px] relative h-[18px] border-2 rounded-full inline-block border-white"
+                    ></strong>
+                    <span>حساب شركة</span>
+                  </button>
+                </li>
+                <li role="presentation" class="w-[50%]">
+                  <button
+                    class="inline-block p-4 w-full flex items-center !transform-none justify-center gap-2 hover:!text-primaryOrange"
+                    id="employee-account-tab"
+                    data-tabs-target="#employee-account"
+                    type="button"
+                    role="tab"
+                    aria-controls="employee-account"
+                    aria-selected="false"
+                  >
+                    <strong
+                      class="box w-[18px] relative h-[18px] border-2 rounded-full inline-block border-white"
+                    ></strong>
+                    <span>حساب موظف</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div id="default-tab-content">
+              <div
+                class="hidden py-4"
+                id="company-account"
+                role="tabpanel"
+                aria-labelledby="company-account-tab"
+              >
+                <form
+                  action="index.html"
+                  class="bg-white gap-5 lg:p-3 p-7 lg:border-0 border rounded-[10px] lg:rounded-full"
                 >
-                  الباقة الذهبية
-                  <strong
-                    class="inline-block absolute top-0 left-[-15px] w-0 h-0 border-solid border-t-[0px] border-r-[0px] border-b-[25px] border-l-[15px] border-t-[transparent] border-r-[transparent] border-b-primaryOrange border-l-[transparent]"
-                  ></strong>
-                </span>
-                <div class="text-center">
-                  <div class="flex items-center justify-center gap-2 mt-4 mb-6">
-                    <h1 class="SF-bold text-primary text-[20px]">1200</h1>
-                    <h1 class="SF-medium text-primary/[40%] text-[13px]">
-                      ريال سعودي
-                    </h1>
+                  <!-- Personal Data -->
+                  <div class="mb-5">
+                    <h5 class="SF-bold text-primary text-[18px]">
+                      البيانات الشخصية
+                    </h5>
+                    <div class="grid grid-cols-12 gap-4 mt-7">
+                      <div class="lg:col-span-6 col-span-12">
+                        <div class="w-full mb-2">
+                          <label
+                            class="block text-primary/[60%] text-[14px] mb-2"
+                            >اسم الشركة</label
+                          >
+                          <input
+                            type="text"
+                            class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                            placeholder="كتابة اسم الشركة"
+                          />
+                        </div>
+                      </div>
+                      <div class="lg:col-span-6 col-span-12">
+                        <div class="w-full mb-2">
+                          <label
+                            class="block text-primary/[60%] text-[14px] mb-2"
+                            >المدينة</label
+                          >
+                          <input
+                            type="text"
+                            class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                            placeholder="ادخل المدينة"
+                          />
+                        </div>
+                      </div>
+                      <div class="lg:col-span-6 col-span-12">
+                        <div class="w-full mb-2">
+                          <label
+                            class="block text-primary/[60%] text-[14px] mb-2"
+                            >عنوان الشركة</label
+                          >
+                          <input
+                            type="text"
+                            class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                            placeholder="ادخل عنوان الشركة"
+                          />
+                        </div>
+                      </div>
+                      <div class="lg:col-span-6 col-span-12">
+                        <div class="w-full mb-2">
+                          <label
+                            class="block text-primary/[60%] text-[14px] mb-2"
+                            >رقم ترخيص الشركة</label
+                          >
+                          <input
+                            type="text"
+                            class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                            placeholder="ادخل رقم ترخيص الشركة"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="my-4">
-                    <h1
-                      class="SF-medium text-primary/[40%] text-start text-[13px]"
+                  <!-- Contact Data -->
+                  <div class="mb-5">
+                    <h5 class="SF-bold text-primary text-[18px]">
+                      بيانات التواصل
+                    </h5>
+                    <div class="grid grid-cols-12 gap-4 mt-7">
+                      <div class="lg:col-span-6 col-span-12">
+                        <div class="w-full mb-2">
+                          <label
+                            class="block text-primary/[60%] text-[14px] mb-2"
+                            >رقم الهاتف</label
+                          >
+                          <input
+                            type="text"
+                            class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                            placeholder="ادخل رقم الهاتف"
+                          />
+                        </div>
+                      </div>
+                      <div class="lg:col-span-6 col-span-12">
+                        <div class="w-full mb-2">
+                          <label
+                            class="block text-primary/[60%] text-[14px] mb-2"
+                            >البريد الالكتروني</label
+                          >
+                          <input
+                            type="text"
+                            class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                            placeholder="ادخل البريد الالكتروني"
+                          />
+                        </div>
+                      </div>
+                      <div class="lg:col-span-6 col-span-12">
+                        <div class="w-full mb-2">
+                          <label
+                            class="block text-primary/[60%] text-[14px] mb-2"
+                            >رقم الواتساب</label
+                          >
+                          <input
+                            type="text"
+                            class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                            placeholder="ادخل رقم الواتساب"
+                          />
+                        </div>
+                      </div>
+                      <div class="lg:col-span-6 col-span-12">
+                        <div class="w-full">
+                          <label
+                            class="block text-primary/[60%] text-[14px] mb-2"
+                            >كلمة المرور</label
+                          >
+                          <div class="relative w-full">
+                            <input
+                              type="password"
+                              id="inputPassword"
+                              class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                              placeholder="كلمة المرور"
+                            />
+                            <i
+                              class="icon-eye cursor-pointer absolute top-[50%] translate-y-[-50%] rtl:left-[10px] ltr:right-[10px] text-[#D3D3D7]"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-2 mt-5">
+                    <div class="flex items-center gap-2">
+                      <input
+                        id="default-checkbox"
+                        type="checkbox"
+                        value=""
+                        class="w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary focus:ring-2"
+                      />
+                      <label
+                        for="default-checkbox"
+                        class="text-primary/[60%] text-[14px]"
+                      >
+                        اوافق علي الشروط والاحكام الخاصة بمنصة سلسلة
+                      </label>
+                    </div>
+                    <a
+                      href=""
+                      class="text-primary/[60%] SF-bold text-[14px] underline"
+                      >الشروط والاحكام</a
                     >
-                      وسيلة الدفع
-                    </h1>
-                    <ul class="my-4">
-                      <li class="mb-3">
-                        <label
-                          class="radioButton border border-[#EBF1F5] rounded-[10px] p-3 relative flex items-center justify-between flex-row-reverse cursor-pointer text-[14px]"
-                        >
-                          <input
-                            type="radio"
-                            name="radio"
-                            class="absolute opacity-0 cursor-pointer"
-                          />
-                          <span
-                            class="checkmark relative w-[20px] h-[20px] rounded-full inline-block border border-primaryOrange align-middle after:content-[''] after:absolute after:top-[4px] after:left-0 after:right-0 after:m-auto after:w-[10px] after:h-[10px] after:rounded-full after:bg-primaryOrange"
-                          ></span>
-                          <div class="flex items-center gap-2">
-                            <img
-                              src="./images/pay1.png"
-                              class="w-[30px] h-[30px] object-contain"
-                              alt=""
-                            />
-                            <h6>ابل باي</h6>
-                          </div>
-                        </label>
-                      </li>
-                      <li class="mb-3">
-                        <label
-                          class="radioButton border border-[#EBF1F5] rounded-[10px] p-3 relative flex items-center justify-between flex-row-reverse cursor-pointer text-[14px]"
-                        >
-                          <input
-                            type="radio"
-                            name="radio"
-                            class="absolute opacity-0 cursor-pointer"
-                          />
-                          <span
-                            class="checkmark relative w-[20px] h-[20px] rounded-full inline-block border border-primaryOrange align-middle after:content-[''] after:absolute after:top-[4px] after:left-0 after:right-0 after:m-auto after:w-[10px] after:h-[10px] after:rounded-full after:bg-primaryOrange"
-                          ></span>
-                          <div class="flex items-center gap-2">
-                            <img
-                              src="./images/pay3.png"
-                              class="w-[30px] h-[30px] object-contain"
-                              alt=""
-                            />
-                            <h6>فيزا كارد</h6>
-                          </div>
-                        </label>
-                      </li>
-                      <li class="mb-3">
-                        <label
-                          class="radioButton border border-[#EBF1F5] rounded-[10px] p-3 relative flex items-center justify-between flex-row-reverse cursor-pointer text-[14px]"
-                        >
-                          <input
-                            type="radio"
-                            name="radio"
-                            class="absolute opacity-0 cursor-pointer"
-                          />
-                          <span
-                            class="checkmark relative w-[20px] h-[20px] rounded-full inline-block border border-primaryOrange align-middle after:content-[''] after:absolute after:top-[4px] after:left-0 after:right-0 after:m-auto after:w-[10px] after:h-[10px] after:rounded-full after:bg-primaryOrange"
-                          ></span>
-                          <div class="flex items-center gap-2">
-                            <img
-                              src="./images/pay2.png"
-                              class="w-[30px] h-[30px] object-contain"
-                              alt=""
-                            />
-                            <h6>ماستر كارد</h6>
-                          </div>
-                        </label>
-                      </li>
-                      <li class="mb-3">
-                        <label
-                          class="radioButton border border-[#EBF1F5] rounded-[10px] p-3 relative flex items-center justify-between flex-row-reverse cursor-pointer text-[14px]"
-                        >
-                          <input
-                            type="radio"
-                            name="radio"
-                            class="absolute opacity-0 cursor-pointer"
-                          />
-                          <span
-                            class="checkmark relative w-[20px] h-[20px] rounded-full inline-block border border-primaryOrange align-middle after:content-[''] after:absolute after:top-[4px] after:left-0 after:right-0 after:m-auto after:w-[10px] after:h-[10px] after:rounded-full after:bg-primaryOrange"
-                          ></span>
-                          <div class="flex items-center gap-2">
-                            <img
-                              src="./images/pay4.png"
-                              class="w-[30px] h-[30px] object-contain"
-                              alt=""
-                            />
-                            <h6>كي نت</h6>
-                          </div>
-                        </label>
-                      </li>
-                    </ul>
                   </div>
-                  <a
-                    href=""
-                    class="hover:bg-primaryOrange hover:text-white border border-primaryOrange SF-medium text-[15px] relative text-primaryOrange rounded-full shadow-lg w-full h-[50px] flex items-center justify-center mb-4 mt-5"
-                    >متابعة الطلب</a
+                  <button
+                    type="submit"
+                    class="bg-primary SF-medium text-[14px] relative text-white rounded-full shadow-lg lg:w-[300px] w-full h-[50px] flex items-center justify-center mt-[30px] before:content-[''] before:absolute before:top-[4px] before:right-0 before:w-full before:h-full before:rounded-full before:bg-primary/[8%]"
                   >
-                </div>
+                    تسجيل
+                  </button>
+                  <p class="text-primary mt-9 text-[14px]">
+                    لديك حساب بالفعل ؟
+                    <a href="login.html" class="text-primaryOrange"
+                      >تسجيل دخول</a
+                    >
+                  </p>
+                </form>
               </div>
-            </div>
-            <div class="lg:col-span-4 col-span-12">
               <div
-                class="backdrop-blur-[10px] lg:w-[95%] min-h-[560px] relative pt-[130px] w-full bg-white/70 border border-[#93A8E5]/[40%] rounded-[30px] py-4 px-6"
+                class="hidden py-4"
+                id="employee-account"
+                role="tabpanel"
+                aria-labelledby="employee-account-tab"
               >
-                <span
-                  class="bg-secondary absolute left-0 right-0 top-[-25px] m-auto p-4 rounded-b-[15px] rtl:rounded-tr-[15px] ltr:rounded-tl-[15px] text-white w-[120px] h-[110px] flex items-center justify-center text-center text-[18px] SF-bold"
+                <form
+                  action="index.html"
+                  class="bg-white gap-5 lg:p-3 p-7 lg:border-0 border rounded-[10px] lg:rounded-full"
                 >
-                  الباقة الفضية
-                  <strong
-                    class="inline-block absolute top-0 left-[-15px] w-0 h-0 border-solid border-t-[0px] border-r-[0px] border-b-[25px] border-l-[15px] border-t-[transparent] border-r-[transparent] border-b-secondary border-l-[transparent]"
-                  ></strong>
-                </span>
-                <div class="text-center">
-                  <h4
-                    class="SF-bold text-primary text-[15px] leading-7 max-w-[200px] m-auto"
+                  <div class="mb-5">
+                    <div class="grid grid-cols-12 gap-4 mt-3">
+                      <div class="lg:col-span-6 col-span-12">
+                        <div class="w-full mb-2">
+                          <label
+                            class="block text-primary/[60%] text-[14px] mb-2"
+                            >الاسم كاملا</label
+                          >
+                          <input
+                            type="text"
+                            class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                            placeholder="ادخل الاسم كاملا"
+                          />
+                        </div>
+                      </div>
+                      <div class="lg:col-span-6 col-span-12">
+                        <div class="w-full mb-2">
+                          <label
+                            class="block text-primary/[60%] text-[14px] mb-2"
+                            >رقم الحوال</label
+                          >
+                          <input
+                            type="text"
+                            class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                            placeholder="ادخل رقم الحوال"
+                          />
+                        </div>
+                      </div>
+                      <div class="lg:col-span-6 col-span-12">
+                        <div class="w-full mb-2">
+                          <label
+                            class="block text-primary/[60%] text-[14px] mb-2"
+                            >البريد الالكتروني</label
+                          >
+                          <input
+                            type="text"
+                            class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                            placeholder="ادخل البريد الالكتروني"
+                          />
+                        </div>
+                      </div>
+                      <div class="lg:col-span-6 col-span-12">
+                        <div class="w-full">
+                          <label
+                            class="block text-primary/[60%] text-[14px] mb-2"
+                            >كلمة المرور</label
+                          >
+                          <div class="relative w-full">
+                            <input
+                              type="password"
+                              id="inputPassword"
+                              class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                              placeholder="كلمة المرور"
+                            />
+                            <i
+                              class="icon-eye cursor-pointer absolute top-[50%] translate-y-[-50%] rtl:left-[10px] ltr:right-[10px] text-[#D3D3D7]"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-2 mt-5">
+                    <div class="flex items-center gap-2">
+                      <input
+                        id="default-checkbox"
+                        type="checkbox"
+                        value=""
+                        class="w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary focus:ring-2"
+                      />
+                      <label
+                        for="default-checkbox"
+                        class="text-primary/[60%] text-[14px]"
+                      >
+                        اوافق علي الشروط والاحكام الخاصة بمنصة سلسلة
+                      </label>
+                    </div>
+                    <a
+                      href=""
+                      class="text-primary/[60%] SF-bold text-[14px] underline"
+                      >الشروط والاحكام</a
+                    >
+                  </div>
+                  <button
+                    type="submit"
+                    class="bg-primary SF-medium text-[14px] relative text-white rounded-full shadow-lg lg:w-[300px] w-full h-[50px] flex items-center justify-center mt-[30px] before:content-[''] before:absolute before:top-[4px] before:right-0 before:w-full before:h-full before:rounded-full before:bg-primary/[8%]"
                   >
-                    اشتراك في جميع خدمات الموقع
-                  </h4>
-                  <h1 class="SF-bold text-primary text-[55px] my-4">100</h1>
-                  <h1 class="SF-medium text-primary text-[13px]">
-                    عدد العمالة
-                  </h1>
-                  <h1 class="SF-bold text-primary text-[20px] mt-9 mb-3">
-                    1200
-                  </h1>
-                  <h1 class="SF-medium text-primary text-[13px] pb-9">
-                    ريال سعودي
-                  </h1>
-                  <a
-                    href=""
-                    class="hover:bg-primaryOrange hover:text-white border border-primaryOrange SF-medium text-[15px] relative text-primaryOrange rounded-full shadow-lg w-full h-[50px] flex items-center justify-center mb-4 mt-5"
-                    >اشترك الأن</a
-                  >
-                </div>
+                    تسجيل
+                  </button>
+                  <p class="text-primary mt-9 text-[14px]">
+                    لديك حساب بالفعل ؟
+                    <a href="login.html" class="text-primaryOrange"
+                      >تسجيل دخول</a
+                    >
+                  </p>
+                </form>
               </div>
             </div>
           </div>

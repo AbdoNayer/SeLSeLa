@@ -307,8 +307,9 @@ html[dir="ltr"] {
       &::after {
         content: "";
         position: absolute;
-        top: 2.8px;
-        right: 2.1px;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
         width: 10px;
         height: 10px;
         background-color: #e97652;

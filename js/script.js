@@ -68,6 +68,17 @@ $(document).ready(function () {
     $("body").toggleClass("!overflow-hidden");
   });
 
+  // Click Open Nav Mobile
+  $(document).on("click", ".icon-eye", function () {
+    $(this).toggleClass("icon-eye-off");
+    var input = document.getElementById('inputPassword');
+    if (input.type === "password") {
+      inputPassword.type = 'text';
+    } else {
+      inputPassword.type = 'password';
+    }
+  });
+
   // Slider Features
   $(".sliderFeatures").owlCarousel({
     loop: false,

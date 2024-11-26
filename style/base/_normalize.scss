@@ -1,25 +1,25 @@
 // Font Import Cdn
 @font-face {
   font-family: 'SF-Bold';
-  src: url('../../fonts/SF-Bold.ttf') format('truetype');
+  src: url('../fonts/SF-Bold.ttf') format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'SF-Book';
-  src: url('../../fonts/SF-Book.ttf') format('truetype');
+  src: url('../fonts/SF-Book.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'SF-Light';
-  src: url('../../fonts/SF-Light.ttf') format('truetype');
+  src: url('../fonts/SF-Light.ttf') format('truetype');
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'SF-Medium';
-  src: url('../../fonts/SF-Medium.ttf') format('truetype');
+  src: url('../fonts/SF-Medium.ttf') format('truetype');
   font-weight: 400;
 }
 
@@ -36,7 +36,6 @@
 body {
   overflow-x: hidden;
   overflow-y: hidden;
-  outline: none !important;
 }
 
 html[dir="rtl"] {

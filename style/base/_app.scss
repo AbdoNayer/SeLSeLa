@@ -245,6 +245,40 @@ header {
   }
 }
 
+// Tabs
+.tabs-view {
+  .text-blue-600,
+  .dark\:hover\:text-blue-500:hover {
+    color: #e97652 !important;
+    font-family: "SF-Medium", sans-serif !important;
+    .box {
+      border: 2px solid #e97652 !important;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 10px;
+        height: 10px;
+        background-color: #e97652;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+// Aside
+aside {
+  nav {
+    a {
+      &.active {
+        background-color: rgb(233, 118, 82, 20%);
+      }
+    }
+  }
+}
+
 // Circle Animation
 .play-circle {
   &:before {
@@ -296,32 +330,9 @@ html[dir="ltr"] {
   }
 }
 
-// Tabs
-.tabs-view {
-  .text-blue-600,
-  .dark\:hover\:text-blue-500:hover {
-    color: #e97652 !important;
-    font-family: "SF-Medium", sans-serif !important;
-    .box {
-      border: 2px solid #e97652 !important;
-      &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%);
-        width: 10px;
-        height: 10px;
-        background-color: #e97652;
-        border-radius: 50%;
-      }
-    }
-  }
-}
-
 // Media Screen
 @media screen and (max-width: 1023px) {
-  .list-head {
+  .list-head{
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;

@@ -80,6 +80,10 @@ button:hover {
   background: linear-gradient(to bottom, #f9d78d 0%, #e97652 100%);
 }
 
+.bg-gradien-3 {
+  background: linear-gradient(to bottom, rgba(249, 215, 141, 0.2) 0%, rgba(233, 118, 82, 0.2) 100%);
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -389,6 +393,32 @@ header .nav-list-header li.active a {
   font-size: 30px;
 }
 
+.tabs-view .text-blue-600,
+.tabs-view .dark\:hover\:text-blue-500:hover {
+  color: #e97652 !important;
+  font-family: "SF-Medium", sans-serif !important;
+}
+.tabs-view .text-blue-600 .box,
+.tabs-view .dark\:hover\:text-blue-500:hover .box {
+  border: 2px solid #e97652 !important;
+}
+.tabs-view .text-blue-600 .box::after,
+.tabs-view .dark\:hover\:text-blue-500:hover .box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #e97652;
+  border-radius: 50%;
+}
+
+aside nav a.active {
+  background-color: rgba(233, 118, 82, 0.2);
+}
+
 .play-circle:before {
   transform: translateX(-50%) translateY(-50%);
   animation: pulse-border 1500ms ease-out infinite;
@@ -416,28 +446,6 @@ html[dir=ltr] .sliderFeatures .owl-nav {
 }
 html[dir=ltr] .sliderWhatSaid .owl-nav {
   right: 0px;
-}
-
-.tabs-view .text-blue-600,
-.tabs-view .dark\:hover\:text-blue-500:hover {
-  color: #e97652 !important;
-  font-family: "SF-Medium", sans-serif !important;
-}
-.tabs-view .text-blue-600 .box,
-.tabs-view .dark\:hover\:text-blue-500:hover .box {
-  border: 2px solid #e97652 !important;
-}
-.tabs-view .text-blue-600 .box::after,
-.tabs-view .dark\:hover\:text-blue-500:hover .box::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  width: 10px;
-  height: 10px;
-  background-color: #e97652;
-  border-radius: 50%;
 }
 
 @media screen and (max-width: 1023px) {

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Title Page -->
+    <title>SelSela</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="./images/shape-title.png" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="HandheldFriendly" content="true" />
+
+    <!-- Fancybox CSS -->
+    <meta name="theme-color" content="#121320" />
+    <meta name="msapplication-navbutton-color" content="#121320" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320" />
+
+    <!-- CSS Animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <!-- CSS OwlCarousel 2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <!-- CSS Fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <!-- CSS Flowbite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="./icons/icon.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style/global.css" />
+  </head>
+  <body class="bg-[#EBF1F5]">
+    <div
+      class="overlay fixed top-0 right-0 w-full h-full bg-overlay translate-x-[-100%] transition duration-700 ease-in-out z-[998]"
+    ></div>
+
+    <!-- Loading App -->
+    <div class="loader w-full h-full fixed top-0 right-0 z-[99999]">
+      <div
+        class="spinner w-[60px] h-[60px] absolute top-0 bottom-0 right-0 left-0 m-auto z-[9]"
+      ></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="flex h-screen">
+      <!-- Sidebar -->
+      <aside class="w-72 flex flex-col relative z-[9999] transition duration-700 ease-in-out max-[1023px]:fixed max-[1023px]:h-full max-[1023px]:rtl:right-0 max-[1023px]:translate-x-[100%] max-[1023px]:ltr:left-0 max-[1023px]:translate-x-[-100%]">
+        <!-- Click BTN On Mobile Open Nav  -->
+        <div class="click-nav lg:hidden absolute top-[100px] inline-block bg-white p-[10px] rtl:left-[-55px] ltr:right-[-55px]">
+          <div class="handle bg-primary"></div>
+          <div class="handle bg-primary"></div>
+          <div class="handle bg-primary"></div>
+        </div>
+        <div class="p-3 bg-white text-center rounded-b-[15px]">
+          <div
+            class="bg-[#EBF1F5] w-[85px] h-[85px] m-auto my-5 flex items-center justify-center rounded-full"
+          >
+            <img
+              src="https://i.ibb.co/Xp1Ckk4/11123.png"
+              alt="Profile"
+              class="w-[65px] h-[65px] rounded-full"
+            />
+          </div>
+          <div class="text-center">
+            <h2 class="text-[14px] text-primary SF-bold">محمد صالح الجربوع</h2>
+            <p class="text-[13px] text-primary/[30%] mt-3">ترخيص</p>
+            <p class="text-[13px] text-primary/[80%] mt-1">0083534835</p>
+          </div>
+        </div>
+        <div
+          class="main-aside bg-primary flex flex-col justify-between rounded-t-[15px] mt-3 flex-1 pt-[30px]"
+        >
+          <nav class="lg:ps-[35px]">
+            <a
+              href="#"
+              class="bg-primaryOrange/[20%] rtl:rounded-r-full ltr:rounded-l-full rtl:border-l-4 ltr:border-r-4 border-primaryOrange flex items-center gap-3 p-2"
+            >
+              <div
+                class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
+              >
+                <img src="./images/license-line.png" alt="" />
+              </div>
+              <span class="text-primaryOrange text-[14px]">التراخيص</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 p-2">
+              <div
+                class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
+              >
+                <img src="./images/list.png" alt="" />
+              </div>
+              <span class="text-white text-[14px]">الطلبات</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 p-2">
+              <div
+                class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
+              >
+                <img src="./images/wallet.png" alt="" />
+              </div>
+              <span class="text-white text-[14px]">المحفظة</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 p-2">
+              <div
+                class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
+              >
+                <img src="./images/archive.png" alt="" />
+              </div>
+              <span class="text-white text-[14px]">أرشيف الطلبات</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 p-2">
+              <div
+                class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
+              >
+                <img src="./images/file-earmark-text.png" alt="" />
+              </div>
+              <span class="text-white text-[14px]">الملفات</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 p-2">
+              <div
+                class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
+              >
+                <img src="./images/user-profile.png" alt="" />
+              </div>
+              <span class="text-white text-[14px]">بيانات الشركة</span>
+            </a>
+          </nav>
+          <div class="py-5 relative">
+            <div class="relative z-[9]">
+              <div class="lg:ps-[35px]">
+                <a href="index.html" class="flex items-center p-2 gap-3 mb-4">
+                  <div
+                    class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
+                  >
+                    <img src="./images/logout.png" alt="" />
+                  </div>
+                  <span class="text-white text-[14px]">تسجيل خروج</span>
+                </a>
+              </div>
+              <p
+                class="text-[#9092AD] text-[12px] text-center mt-5 mb-3 lg:px-[50px] px-2"
+              >
+                جميع الحقوق محفوظه لسلسلة 2024
+              </p>
+            </div>
+            <!-- Shape -->
+            <div
+              class="flex items-center absolute bottom-[-130px] right-0 left-0 m-auto justify-center bg-white/[3%] w-[250px] h-[250px] rounded-full"
+            >
+              <div
+                class="flex items-center justify-center bg-white/[5%] w-[170px] h-[170px] rounded-full border-[5px] border-primary"
+              >
+                <div
+                  class="flex items-center justify-center bg-white/[10%] w-[100px] h-[100px] rounded-full border-[7px] border-primary"
+                >
+                  <div
+                    class="flex items-center justify-center bg-primary w-[30px] h-[30px] rounded-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1 px-4 overflow-y-auto">
+        <!-- Header -->
+        <div
+          class="flex justify-between items-center mb-6 p-5 bg-white rounded-b-[15px]"
+        >
+          <a href=""><img src="./images/logo.png" alt="" /></a>
+          <div class="flex items-center gap-5">
+            <ul class="flex items-center gap-3">
+              <li>
+                <a href="index.html" class="text-primary text-[15px]"
+                  >الرئيسية</a
+                >
+              </li>
+              <li>
+                <a href="contact-us.html" class="text-primary text-[15px]"
+                  >من نحن</a
+                >
+              </li>
+            </ul>
+            <img
+              src="https://i.ibb.co/Xp1Ckk4/11123.png"
+              alt="Profile"
+              class="w-[45px] h-[45px] rounded-full"
+            />
+          </div>
+        </div>
+
+        <!-- Stats Cards -->
+      </div>
+    </div>
+
+    <!-- Plugin Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Plugin OwlCarousel 2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- Plugin TailwindCss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Plugin Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- Plugin Animation Page -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Plugin Text Animation -->
+    <script src="./js/script.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "1.5rem",
+              sm: "1rem",
+              lg: "2rem",
+              xl: "2rem",
+              "2xl": "3rem",
+            },
+          },
+          extend: {
+            boxShadow: {
+              custom:
+                "rgba(17, 17, 26, 0.1) 0px -13px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
+            },
+            colors: {
+              primary: "#23243A",
+              primaryOrange: "#E97652",
+              primaryYellow: "#F9D78D",
+              secondary: "#93A8E5",
+              overlay: "rgba(0, 0, 0, 0.4)",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>

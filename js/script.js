@@ -53,8 +53,9 @@ $(document).ready(function () {
       e.preventDefault();
       if ($(window).width() < 990) {
         $(".handle").toggleClass("closed");
-        $(".list-head").toggleClass("!translate-x-[0%]");
-        $(".overlay").toggleClass("translate-x-[-100%]");
+        $(".list-head").toggleClass("!transform-none");
+        $(".overlay").toggleClass("!transform-none");
+        $("aside").toggleClass("!transform-none");
         $("body").toggleClass("!overflow-hidden");
       }
     }
@@ -63,8 +64,9 @@ $(document).ready(function () {
   // Click Open Nav Mobile
   $(document).on("click", ".click-nav, .overlay", function () {
     $(".handle").toggleClass("closed");
-    $(".list-head").toggleClass("!translate-x-[0%]");
-    $(".overlay").toggleClass("translate-x-[-100%]");
+    $(".list-head").toggleClass("!transform-none");
+    $(".overlay").toggleClass("!transform-none");
+    $("aside").toggleClass("!transform-none");
     $("body").toggleClass("!overflow-hidden");
   });
 

@@ -93,6 +93,10 @@ button{
   background: linear-gradient(to bottom, #f9d78d 0%, #e97652 100%);
 }
 
+.bg-gradien-3 {
+  background: linear-gradient(to bottom, rgb(249, 215, 141, 20%) 0%, rgb(233, 118, 82, 20%) 100%);
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

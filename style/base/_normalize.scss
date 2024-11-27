@@ -1,25 +1,25 @@
 // Font Import Cdn
 @font-face {
-  font-family: 'SF-Bold';
-  src: url('../fonts/SF-Bold.ttf') format('truetype');
+  font-family: "SF-Bold";
+  src: url("../fonts/SF-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'SF-Book';
-  src: url('../fonts/SF-Book.ttf') format('truetype');
+  font-family: "SF-Book";
+  src: url("../fonts/SF-Book.ttf") format("truetype");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'SF-Light';
-  src: url('../fonts/SF-Light.ttf') format('truetype');
+  font-family: "SF-Light";
+  src: url("../fonts/SF-Light.ttf") format("truetype");
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'SF-Medium';
-  src: url('../fonts/SF-Medium.ttf') format('truetype');
+  font-family: "SF-Medium";
+  src: url("../fonts/SF-Medium.ttf") format("truetype");
   font-weight: 400;
 }
 
@@ -40,47 +40,52 @@ body {
 
 html[dir="rtl"] {
   body {
-    font-family: 'SF-Book', sans-serif;
+    font-family: "SF-Book", sans-serif;
   }
 }
 
 html[dir="ltr"] {
   body {
-    font-family: 'SF-Book', sans-serif;
+    font-family: "SF-Book", sans-serif;
   }
 }
 
 .SF-bold {
-  font-family: 'SF-Bold', sans-serif !important;
+  font-family: "SF-Bold", sans-serif !important;
 }
 
 .SF-light {
-  font-family: 'SF-Light', sans-serif !important;
+  font-family: "SF-Light", sans-serif !important;
 }
 
 .SF-medium {
-  font-family: 'SF-Medium', sans-serif !important;
+  font-family: "SF-Medium", sans-serif !important;
 }
 
-select, input, textarea, button{
+select,
+input,
+textarea,
+button {
   outline: none !important;
   box-shadow: initial !important;
-  &:focus{
+  &:focus {
     box-shadow: initial !important;
   }
 }
 
-a, img, button{
+a,
+img,
+button {
   transition: 0.5s;
 }
 
-button{
-  &:hover{
+button {
+  &:hover {
     transform: scale(0.9);
   }
 }
 
-.bg-gray-900\/50.dark\:bg-gray-900\/80.fixed.inset-0.z-40{
+.bg-gray-900\/50.dark\:bg-gray-900\/80.fixed.inset-0.z-40 {
   display: none !important;
 }
 
@@ -94,7 +99,11 @@ button{
 }
 
 .bg-gradien-3 {
-  background: linear-gradient(to bottom, rgb(249, 215, 141, 20%) 0%, rgb(233, 118, 82, 20%) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgb(249, 215, 141, 20%) 0%,
+    rgb(233, 118, 82, 20%) 100%
+  );
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -104,8 +113,15 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+/* Icon Calendar */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: none;
+  width: 15px;
+  height: 15px;
+}
+
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 

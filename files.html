@@ -216,227 +216,204 @@
         </div>
 
         <!-- Body Content -->
-        <div class="py-4 px-7 bg-white rounded-[15px] mb-5">
-          <div class="grid grid-cols-12 gap-4">
-            <div class="lg:col-span-6 col-span-12">
+        <div class="py-4 px-7 bg-white rounded-[15px]">
+          <div
+            class="flex items-center justify-between max-[1200px]:flex-col gap-[50px] max-[1200px]:gap-3"
+          >
+            <!-- Title -->
+            <div class="flex items-center gap-3">
+              <i class="icon-list text-[18px] text-[#9092AD]"></i>
+              <h5 class="text-primary text-[18px] SF-medium">الملفات</h5>
+            </div>
+            <!-- Serach For Services -->
+            <form class="flex items-center gap-3 lg:w-[500px] w-full">
               <div
-                class="flex items-center max-[490px]:flex-col bg-[#EBF1F5]/[40%] lg:gap-5 gap-3 rounded-[20px] py-[29px] px-6"
+                class="bg-[#EBF1F5]/[30%] flex items-center justify-between rounded-full py-4 px-5 flex-1 max-[540px]:w-full"
               >
-                <div
-                  class="lg:w-[50%] w-full flex items-center gap-4 py-3 lg:rtl:border-l lg:ltr:border-r"
-                >
-                  <img src="./images/list-group.png" class="" alt="" />
-                  <div class="px-1">
-                    <h4 class="text-[#9092AD] text-[14px]">اجمالي الطلبات</h4>
-                    <span class="SF-bold text-primary text-[20px]">13</span>
-                  </div>
-                </div>
-                <div class="lg:w-[50%] w-full flex items-center py-3 gap-3">
-                  <img
-                    src="./images/done-list.png"
-                    class="max-[490px]:w-[45px] max-[490px]:h-[45px] max-[490px]:object-contain"
-                    alt=""
+                <div class="flex items-center gap-3">
+                  <button>
+                    <i class="icon-search text-primary/[46%] text-[18px]"></i>
+                  </button>
+                  <input
+                    class="border-0 p-0 text-[#9092AD] text-[13px] bg-transparent"
+                    type="text"
+                    placeholder="بحث عن طلب"
                   />
-                  <div class="px-1">
-                    <h4 class="text-[#9092AD] text-[14px]">الطلبات الفعالة</h4>
-                    <span class="SF-bold text-primary text-[20px]">20</span>
-                  </div>
                 </div>
+                <span class="text-primary text-[14px]">الغاء</span>
               </div>
-            </div>
-            <div class="lg:col-span-6 col-span-12">
-              <div
-                class="flex items-center max-[590px]:flex-col justify-between bg-[#EBF1F5]/[40%] lg:gap-5 gap-3 rounded-[20px] p-6"
-              >
-                <div class="flex items-center max-[430px]:flex-col gap-4">
-                  <img src="./images/wal.png" class="" alt="" />
-                  <div class="px-1 max-[430px]:text-center">
-                    <h4 class="text-[#9092AD] text-[14px]">الرصيد الحالي</h4>
-                    <span class="SF-bold text-primary text-[20px] block my-2"
-                      >345.54</span
-                    >
-                    <p
-                      class="text-[14px] text-[#9092AD] flex items-center gap-1"
-                    >
-                      <i class="icon-calendar"></i>
-                      <span>تاريخ احدث اضافة :</span>
-                      <span class="text-primary">28-10-2024</span>
-                    </p>
-                  </div>
-                </div>
-                <a
-                  href="packages.html"
-                  class="bg-white SF-medium text-[14px] flex items-center gap-2 text-primary rounded-full px-6 py-3"
-                >
-                  <i class="icon-plus"></i>
-                  <span>اضافة رصيد</span></a
-                >
-              </div>
-            </div>
+            </form>
           </div>
         </div>
 
-        <div
-          class="py-4 px-7 bg-white rounded-[15px] mb-5 flex items-center lg:gap-[50px] gap-3"
-        >
-          <div class="flex items-center gap-3">
-            <i class="icon-license-line text-[18px] text-[#9092AD]"></i>
-            <h5 class="text-primary text-[18px] SF-medium">التراخيص</h5>
-          </div>
-          <!-- Serach For Services -->
-          <form class="flex items-center flex-1 gap-3">
+        <div class="py-4 px-7 bg-white rounded-[15px] my-3">
+          <div
+            class="flex items-center justify-between lg:flex-row flex-col gap-3"
+          >
             <div
-              class="bg-[#EBF1F5]/[30%] flex items-center justify-between rounded-full py-4 px-5 flex-1 max-[540px]:w-full"
+              class="flex items-center lg:flex-row flex-col gap-x-[100px] gap-y-3"
             >
-              <div class="flex items-center gap-3">
-                <button>
-                  <i class="icon-search text-primary/[46%] text-[18px]"></i>
-                </button>
-                <input
-                  class="border-0 p-0 text-[#9092AD] text-[13px] bg-transparent"
-                  type="text"
-                  placeholder="بحث عن طلب"
-                />
+              <span class="text-[14px] text-[#9092AD]">01</span>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">اسم الملف</h4>
+                <h5 class="text-[14px] SF-medium text-primary mt-2">
+                  الاوراق الثوبتية للشركة
+                </h5>
               </div>
-              <span class="text-primary text-[14px]">الغاء</span>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">تاريخ الاضافة</h4>
+                <h5 class="text-[12px] text-primary mt-2">28-10-2024</h5>
+              </div>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">الملف</h4>
+                <div class="flex items-center justify-center gap-3 mt-2">
+                  <img src="./images/pdf.png" alt="" />
+                  <span class="text-[12px] text-primary">Company services</span>
+                </div>
+              </div>
             </div>
-          </form>
+            <button
+              type="submit"
+              class="hover:bg-primaryOrange hover:border-primaryOrange hover:text-white bg-white border border-[#EAF1F4] text-[12px] relative text-[#9092AD] rounded-full lg:w-[120px] w-full h-[36px] flex items-center justify-center"
+            >
+              <span>عرض الملف</span>
+            </button>
+          </div>
         </div>
-
-        <div class="pb-4">
-          <div class="grid grid-cols-12 gap-4">
-            <div class="lg:col-span-6 col-span-12">
-              <div class="p-7 bg-white rounded-[15px]">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="rounded-full border overflow-hidden w-[55px] h-[55px]"
-                    >
-                      <img
-                        src="./images/01.png"
-                        class="object-contain w-[55px] h-[55px]"
-                        alt=""
-                      />
-                    </div>
-                    <h4 class="SF-medium text-primary text-[14px]">ابشر</h4>
-                  </div>
-                  <a
-                    href="submit-application.html"
-                    class="border border-primaryOrange SF-medium text-[14px] relative text-primaryOrange rounded-full px-6 py-3 hover:bg-primaryOrange hover:text-white"
-                    >تقديم طلب</a
-                  >
-                </div>
-                <div class="my-5 px-3">
-                  <h5 class="text-[#93A8E5] text-[13px] SF-medium mb-4">
-                    المتطلبات والشروط
-                  </h5>
-                  <p class="text-[13px] text-primary/[75%]">
-                    1- صورة الهوية 2- صورة السجل التجاري 3- كلمة مرور الغرفة
-                    التجارية
-                  </p>
+        <div class="py-4 px-7 bg-white rounded-[15px] my-3">
+          <div
+            class="flex items-center justify-between lg:flex-row flex-col gap-3"
+          >
+            <div
+              class="flex items-center lg:flex-row flex-col gap-x-[100px] gap-y-3"
+            >
+              <span class="text-[14px] text-[#9092AD]">01</span>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">اسم الملف</h4>
+                <h5 class="text-[14px] SF-medium text-primary mt-2">
+                  الاوراق الثوبتية للشركة
+                </h5>
+              </div>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">تاريخ الاضافة</h4>
+                <h5 class="text-[12px] text-primary mt-2">28-10-2024</h5>
+              </div>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">الملف</h4>
+                <div class="flex items-center justify-center gap-3 mt-2">
+                  <img src="./images/pdf.png" alt="" />
+                  <span class="text-[12px] text-primary">Company services</span>
                 </div>
               </div>
             </div>
-            <div class="lg:col-span-6 col-span-12">
-              <div class="p-7 bg-white rounded-[15px]">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="rounded-full border overflow-hidden w-[55px] h-[55px]"
-                    >
-                      <img
-                        src="./images/02.png"
-                        class="object-contain w-[55px] h-[55px]"
-                        alt=""
-                      />
-                    </div>
-                    <h4 class="SF-medium text-primary text-[14px]">
-                      البريد السعودي
-                    </h4>
-                  </div>
-                  <a
-                    href="submit-application.html"
-                    class="border border-primaryOrange SF-medium text-[14px] relative text-primaryOrange rounded-full px-6 py-3 hover:bg-primaryOrange hover:text-white"
-                    >تقديم طلب</a
-                  >
-                </div>
-                <div class="my-5 px-3">
-                  <h5 class="text-[#93A8E5] text-[13px] SF-medium mb-4">
-                    المتطلبات والشروط
-                  </h5>
-                  <p class="text-[13px] text-primary/[75%]">
-                    1- صورة الهوية 2- صورة السجل التجاري 3- كلمة مرور الغرفة
-                    التجارية
-                  </p>
+            <button
+              type="submit"
+              class="hover:bg-primaryOrange hover:border-primaryOrange hover:text-white bg-white border border-[#EAF1F4] text-[12px] relative text-[#9092AD] rounded-full lg:w-[120px] w-full h-[36px] flex items-center justify-center"
+            >
+              <span>عرض الملف</span>
+            </button>
+          </div>
+        </div>
+        <div class="py-4 px-7 bg-white rounded-[15px] my-3">
+          <div
+            class="flex items-center justify-between lg:flex-row flex-col gap-3"
+          >
+            <div
+              class="flex items-center lg:flex-row flex-col gap-x-[100px] gap-y-3"
+            >
+              <span class="text-[14px] text-[#9092AD]">01</span>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">اسم الملف</h4>
+                <h5 class="text-[14px] SF-medium text-primary mt-2">
+                  الاوراق الثوبتية للشركة
+                </h5>
+              </div>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">تاريخ الاضافة</h4>
+                <h5 class="text-[12px] text-primary mt-2">28-10-2024</h5>
+              </div>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">الملف</h4>
+                <div class="flex items-center justify-center gap-3 mt-2">
+                  <img src="./images/pdf.png" alt="" />
+                  <span class="text-[12px] text-primary">Company services</span>
                 </div>
               </div>
             </div>
-            <div class="lg:col-span-6 col-span-12">
-              <div class="p-7 bg-white rounded-[15px]">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="rounded-full border overflow-hidden w-[55px] h-[55px]"
-                    >
-                      <img
-                        src="./images/03.png"
-                        class="object-contain w-[55px] h-[55px]"
-                        alt=""
-                      />
-                    </div>
-                    <h4 class="SF-medium text-primary text-[14px]">ابشر</h4>
-                  </div>
-                  <a
-                    href="submit-application.html"
-                    class="border border-primaryOrange SF-medium text-[14px] relative text-primaryOrange rounded-full px-6 py-3 hover:bg-primaryOrange hover:text-white"
-                    >تقديم طلب</a
-                  >
-                </div>
-                <div class="my-5 px-3">
-                  <h5 class="text-[#93A8E5] text-[13px] SF-medium mb-4">
-                    المتطلبات والشروط
-                  </h5>
-                  <p class="text-[13px] text-primary/[75%]">
-                    1- صورة الهوية 2- صورة السجل التجاري 3- كلمة مرور الغرفة
-                    التجارية
-                  </p>
+            <button
+              type="submit"
+              class="hover:bg-primaryOrange hover:border-primaryOrange hover:text-white bg-white border border-[#EAF1F4] text-[12px] relative text-[#9092AD] rounded-full lg:w-[120px] w-full h-[36px] flex items-center justify-center"
+            >
+              <span>عرض الملف</span>
+            </button>
+          </div>
+        </div>
+        <div class="py-4 px-7 bg-white rounded-[15px] my-3">
+          <div
+            class="flex items-center justify-between lg:flex-row flex-col gap-3"
+          >
+            <div
+              class="flex items-center lg:flex-row flex-col gap-x-[100px] gap-y-3"
+            >
+              <span class="text-[14px] text-[#9092AD]">01</span>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">اسم الملف</h4>
+                <h5 class="text-[14px] SF-medium text-primary mt-2">
+                  الاوراق الثوبتية للشركة
+                </h5>
+              </div>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">تاريخ الاضافة</h4>
+                <h5 class="text-[12px] text-primary mt-2">28-10-2024</h5>
+              </div>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">الملف</h4>
+                <div class="flex items-center justify-center gap-3 mt-2">
+                  <img src="./images/pdf.png" alt="" />
+                  <span class="text-[12px] text-primary">Company services</span>
                 </div>
               </div>
             </div>
-            <div class="lg:col-span-6 col-span-12">
-              <div class="p-7 bg-white rounded-[15px]">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="rounded-full border overflow-hidden w-[55px] h-[55px]"
-                    >
-                      <img
-                        src="./images/04.png"
-                        class="object-contain w-[55px] h-[55px]"
-                        alt=""
-                      />
-                    </div>
-                    <h4 class="SF-medium text-primary text-[14px]">
-                      البريد السعودي
-                    </h4>
-                  </div>
-                  <a
-                    href="submit-application.html"
-                    class="border border-primaryOrange SF-medium text-[14px] relative text-primaryOrange rounded-full px-6 py-3 hover:bg-primaryOrange hover:text-white"
-                    >تقديم طلب</a
-                  >
-                </div>
-                <div class="my-5 px-3">
-                  <h5 class="text-[#93A8E5] text-[13px] SF-medium mb-4">
-                    المتطلبات والشروط
-                  </h5>
-                  <p class="text-[13px] text-primary/[75%]">
-                    1- صورة الهوية 2- صورة السجل التجاري 3- كلمة مرور الغرفة
-                    التجارية
-                  </p>
+            <button
+              type="submit"
+              class="hover:bg-primaryOrange hover:border-primaryOrange hover:text-white bg-white border border-[#EAF1F4] text-[12px] relative text-[#9092AD] rounded-full lg:w-[120px] w-full h-[36px] flex items-center justify-center"
+            >
+              <span>عرض الملف</span>
+            </button>
+          </div>
+        </div>
+        <div class="py-4 px-7 bg-white rounded-[15px] my-3">
+          <div
+            class="flex items-center justify-between lg:flex-row flex-col gap-3"
+          >
+            <div
+              class="flex items-center lg:flex-row flex-col gap-x-[100px] gap-y-3"
+            >
+              <span class="text-[14px] text-[#9092AD]">01</span>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">اسم الملف</h4>
+                <h5 class="text-[14px] SF-medium text-primary mt-2">
+                  الاوراق الثوبتية للشركة
+                </h5>
+              </div>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">تاريخ الاضافة</h4>
+                <h5 class="text-[12px] text-primary mt-2">28-10-2024</h5>
+              </div>
+              <div class="text-center">
+                <h4 class="text-[12px] text-[#9092AD]">الملف</h4>
+                <div class="flex items-center justify-center gap-3 mt-2">
+                  <img src="./images/pdf.png" alt="" />
+                  <span class="text-[12px] text-primary">Company services</span>
                 </div>
               </div>
             </div>
+            <button
+              type="submit"
+              class="hover:bg-primaryOrange hover:border-primaryOrange hover:text-white bg-white border border-[#EAF1F4] text-[12px] relative text-[#9092AD] rounded-full lg:w-[120px] w-full h-[36px] flex items-center justify-center"
+            >
+              <span>عرض الملف</span>
+            </button>
           </div>
         </div>
       </div>

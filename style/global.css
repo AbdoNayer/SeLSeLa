@@ -52,15 +52,23 @@ html[dir=ltr] body {
   font-family: "SF-Medium", sans-serif !important;
 }
 
-select, input, textarea, button {
+select,
+input,
+textarea,
+button {
   outline: none !important;
   box-shadow: initial !important;
 }
-select:focus, input:focus, textarea:focus, button:focus {
+select:focus,
+input:focus,
+textarea:focus,
+button:focus {
   box-shadow: initial !important;
 }
 
-a, img, button {
+a,
+img,
+button {
   transition: 0.5s;
 }
 
@@ -89,6 +97,13 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/* Icon Calendar */
+input[type=date]::-webkit-calendar-picker-indicator {
+  background: none;
+  width: 15px;
+  height: 15px;
 }
 
 /* Firefox */
@@ -419,6 +434,11 @@ aside nav a.active {
   background-color: rgba(233, 118, 82, 0.2);
 }
 
+table th,
+table td {
+  white-space: nowrap;
+}
+
 .play-circle:before {
   transform: translateX(-50%) translateY(-50%);
   animation: pulse-border 1500ms ease-out infinite;
@@ -449,7 +469,8 @@ html[dir=ltr] .sliderWhatSaid .owl-nav {
 }
 
 @media screen and (max-width: 1023px) {
-  .list-head, .main-aside {
+  .list-head,
+  .main-aside {
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;

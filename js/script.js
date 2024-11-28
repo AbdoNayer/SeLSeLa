@@ -25,13 +25,24 @@ $(document).ready(function () {
   $(".fix-up").hide();
   // Scroll Fix Header
   $(window).scroll(function () {
-    if ($(window).width() > 767) {
-    }
     if ($(this).scrollTop() > 50) {
       $(".fix-up").show();
     } else {
       $(".fix-up").hide();
     }
+  });
+
+  // Click Scroll Up Page
+  $(document).on("click", ".toggle-oreder-modal", function () {
+    $(".show-details-Order").toggleClass("hidden");
+    setTimeout(()=> {
+      $(".inf-order-details").toggleClass("!transform-none");
+    },100)
+  });
+
+  // Click Scroll Up Page
+  $(document).on("click", ".toggle-chat", function () {
+    $(".chat-order").toggleClass("!transform-none");
   });
 
   // Click Scroll Up Page
@@ -73,11 +84,11 @@ $(document).ready(function () {
   // Click Open Nav Mobile
   $(document).on("click", ".icon-eye", function () {
     $(this).toggleClass("icon-eye-off");
-    var input = document.getElementById('inputPassword');
+    var input = document.getElementById("inputPassword");
     if (input.type === "password") {
-      inputPassword.type = 'text';
+      inputPassword.type = "text";
     } else {
-      inputPassword.type = 'password';
+      inputPassword.type = "password";
     }
   });
 

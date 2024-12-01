@@ -69,878 +69,897 @@
     </div>
 
     <!-- Main Container -->
-    <div class="flex h-screen">
-      <!-- Sidebar -->
-      <aside
-        class="w-72 flex flex-col relative z-[9999] transition duration-700 ease-in-out max-[1023px]:fixed max-[1023px]:h-full max-[1023px]:rtl:right-0 max-[1023px]:translate-x-[100%] max-[1023px]:ltr:left-0 max-[1023px]:translate-x-[-100%]"
-      >
-        <!-- Click BTN On Mobile Open Nav  -->
-        <div
-          class="click-nav lg:hidden absolute top-[100px] inline-block bg-white p-[10px] rtl:left-[-55px] ltr:right-[-55px]"
+    <div class="hidden-over hidden">
+      <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside
+          class="w-72 flex flex-col relative z-[9999] transition duration-700 ease-in-out max-[1023px]:fixed max-[1023px]:h-full max-[1023px]:rtl:right-0 max-[1023px]:translate-x-[100%] max-[1023px]:ltr:left-0 max-[1023px]:translate-x-[-100%]"
         >
-          <div class="handle bg-primary"></div>
-          <div class="handle bg-primary"></div>
-          <div class="handle bg-primary"></div>
-        </div>
-        <div class="p-3 bg-white text-center rounded-b-[15px]">
+          <!-- Click BTN On Mobile Open Nav  -->
           <div
-            class="bg-gradient-to-r from-[#fff] to-[#EBF1F5] relative w-[100px] h-[100px] m-auto my-5 flex items-center justify-center rounded-full before:content-[''] before:opacity-[50%] before:absolute before:top-[15px] before:rounded-full before:rotate[-90deg] before:right-[-20px] before:bg-gradient-to-r before:from-[#fff] before:to-[#EBF1F5] before:w-[80px] before:h-[80px] after:content-[''] after:opacity-[50%] after:absolute after:top-[0px] after:rotate[90deg] after:rounded-full after:left-[-20px] after:bg-gradient-to-l after:from-[#fff] after:to-[#EBF1F5] after:w-[80px] after:h-[80px]"
+            class="click-nav lg:hidden absolute top-[100px] inline-block bg-white p-[10px] rtl:left-[-55px] ltr:right-[-55px]"
           >
-            <img
-              src="https://i.ibb.co/Xp1Ckk4/11123.png"
-              alt="Profile"
-              class="w-[70px] h-[70px] rounded-full relative z-[9]"
-            />
+            <div class="handle bg-primary"></div>
+            <div class="handle bg-primary"></div>
+            <div class="handle bg-primary"></div>
           </div>
-          <div class="text-center">
-            <h2 class="text-[14px] text-primary SF-bold">محمد صالح الجربوع</h2>
-            <p class="text-[13px] text-primary/[30%] mt-3">ترخيص</p>
-            <p class="text-[13px] text-primary/[80%] mt-1">0083534835</p>
-          </div>
-        </div>
-        <div
-          class="main-aside bg-primary lg:overflow-hidden overflow-y-auto flex flex-col justify-between rounded-t-[15px] mt-3 flex-1 pt-[30px]"
-        >
-          <nav class="lg:ps-[35px]">
-            <a
-              href="admin.html"
-              class="bg-primaryOrange/[20%] rtl:rounded-r-full ltr:rounded-l-full rtl:border-l-4 ltr:border-r-4 border-primaryOrange flex items-center gap-3 p-2"
-            >
-              <div
-                class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
-              >
-                <img src="./images/license-line.png" alt="" />
-              </div>
-              <span class="text-primaryOrange text-[14px]">التراخيص</span>
-            </a>
-            <a href="orders.html" class="flex items-center gap-3 p-2">
-              <div
-                class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
-              >
-                <img src="./images/list.png" alt="" />
-              </div>
-              <span class="text-white text-[14px]">الطلبات</span>
-            </a>
-            <a href="wallet.html" class="flex items-center gap-3 p-2">
-              <div
-                class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
-              >
-                <img src="./images/wallet.png" alt="" />
-              </div>
-              <span class="text-white text-[14px]">المحفظة</span>
-            </a>
-            <a href="order-archive.html" class="flex items-center gap-3 p-2">
-              <div
-                class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
-              >
-                <img src="./images/archive.png" alt="" />
-              </div>
-              <span class="text-white text-[14px]">أرشيف الطلبات</span>
-            </a>
-            <a href="files.html" class="flex items-center gap-3 p-2">
-              <div
-                class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
-              >
-                <img src="./images/file-earmark-text.png" alt="" />
-              </div>
-              <span class="text-white text-[14px]">الملفات</span>
-            </a>
-            <a href="company-data.html" class="flex items-center gap-3 p-2">
-              <div
-                class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
-              >
-                <img src="./images/user-profile.png" alt="" />
-              </div>
-              <span class="text-white text-[14px]">بيانات الشركة</span>
-            </a>
-          </nav>
-          <div class="py-5 relative">
-            <div class="relative z-[9]">
-              <div class="lg:ps-[35px]">
-                <a href="index.html" class="flex items-center p-2 gap-3 mb-4">
-                  <div
-                    class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
-                  >
-                    <img src="./images/logout.png" alt="" />
-                  </div>
-                  <span class="text-white text-[14px]">تسجيل خروج</span>
-                </a>
-              </div>
-              <p
-                class="text-[#9092AD] text-[12px] text-center mt-5 mb-3 lg:px-[50px] px-2"
-              >
-                جميع الحقوق محفوظه لسلسلة 2024
-              </p>
-            </div>
-            <!-- Shape -->
+          <div class="p-3 bg-white text-center rounded-b-[15px]">
             <div
-              class="flex items-center absolute bottom-[-130px] right-0 left-0 m-auto justify-center bg-white/[3%] w-[250px] h-[250px] rounded-full"
+              class="bg-gradient-to-r from-[#fff] to-[#EBF1F5] relative w-[100px] h-[100px] m-auto my-5 flex items-center justify-center rounded-full before:content-[''] before:opacity-[50%] before:absolute before:top-[15px] before:rounded-full before:rotate[-90deg] before:right-[-20px] before:bg-gradient-to-r before:from-[#fff] before:to-[#EBF1F5] before:w-[80px] before:h-[80px] after:content-[''] after:opacity-[50%] after:absolute after:top-[0px] after:rotate[90deg] after:rounded-full after:left-[-20px] after:bg-gradient-to-l after:from-[#fff] after:to-[#EBF1F5] after:w-[80px] after:h-[80px]"
             >
-              <div
-                class="flex items-center justify-center bg-white/[5%] w-[170px] h-[170px] rounded-full border-[5px] border-primary"
-              >
-                <div
-                  class="flex items-center justify-center bg-white/[10%] w-[100px] h-[100px] rounded-full border-[7px] border-primary"
-                >
-                  <div
-                    class="flex items-center justify-center bg-primary w-[30px] h-[30px] rounded-full"
-                  ></div>
-                </div>
-              </div>
+              <img
+                src="https://i.ibb.co/Xp1Ckk4/11123.png"
+                alt="Profile"
+                class="w-[70px] h-[70px] rounded-full relative z-[9]"
+              />
+            </div>
+            <div class="text-center">
+              <h2 class="text-[14px] text-primary SF-bold">
+                محمد صالح الجربوع
+              </h2>
+              <p class="text-[13px] text-primary/[30%] mt-3">ترخيص</p>
+              <p class="text-[13px] text-primary/[80%] mt-1">0083534835</p>
             </div>
           </div>
-        </div>
-      </aside>
-
-      <!-- Main Content -->
-      <div class="flex-1 px-4 overflow-y-auto">
-        <!-- Header -->
-        <div
-          class="flex justify-between items-center mb-6 p-5 bg-white rounded-b-[15px] sticky top-0 z-[99]"
-        >
-          <a href=""><img src="./images/logo.png" alt="" /></a>
-          <div class="flex items-center gap-5">
-            <ul class="flex items-center gap-3">
-              <li>
-                <a href="index.html" class="text-primary text-[15px]"
-                  >الرئيسية</a
-                >
-              </li>
-              <li>
-                <a href="contact-us.html" class="text-primary text-[15px]"
-                  >من نحن</a
-                >
-              </li>
-            </ul>
-            <img
-              src="https://i.ibb.co/Xp1Ckk4/11123.png"
-              alt="Profile"
-              class="w-[45px] h-[45px] rounded-full"
-            />
-          </div>
-        </div>
-
-        <!-- Body Content -->
-        <div class="py-6 lg:px-7 bg-white rounded-[15px] mb-5">
-          <a
-            href="#"
-            type="button"
-            class="flex items-center gap-3"
-            data-modal-hide="service-modal"
+          <div
+            class="main-aside bg-primary lg:overflow-hidden overflow-y-auto flex flex-col justify-between rounded-t-[15px] mt-3 flex-1 pt-[30px]"
           >
-            <span
-              class="w-[35px] h-[35px] flex items-center justify-center rounded-full border"
-              ><i
-                class="icon-chevron-right ltr:rotate-180 text-[#9092AD] text-[20px]"
-              ></i
-            ></span>
-            <span class="SF-medium text-primary text-[14px]">رجوع</span>
-          </a>
-          <h5 class="text-primary text-[20px] SF-medium text-center">
-            إضافة ترخيص
-          </h5>
-          <div class="container">
-            <div class="p-7 bg-white rounded-[15px]">
-              <div class="flex items-center justify-between">
-                <div class="flex max-[600px]:flex-col gap-5">
+            <nav class="lg:ps-[35px]">
+              <a
+                href="admin.html"
+                class="bg-primaryOrange/[20%] rtl:rounded-r-full ltr:rounded-l-full rtl:border-l-4 ltr:border-r-4 border-primaryOrange flex items-center gap-3 p-2"
+              >
+                <div
+                  class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
+                >
+                  <img src="./images/license-line.png" alt="" />
+                </div>
+                <span class="text-primaryOrange text-[14px]">التراخيص</span>
+              </a>
+              <a href="orders.html" class="flex items-center gap-3 p-2">
+                <div
+                  class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
+                >
+                  <img src="./images/list.png" alt="" />
+                </div>
+                <span class="text-white text-[14px]">الطلبات</span>
+              </a>
+              <a href="wallet.html" class="flex items-center gap-3 p-2">
+                <div
+                  class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
+                >
+                  <img src="./images/wallet.png" alt="" />
+                </div>
+                <span class="text-white text-[14px]">المحفظة</span>
+              </a>
+              <a href="order-archive.html" class="flex items-center gap-3 p-2">
+                <div
+                  class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
+                >
+                  <img src="./images/archive.png" alt="" />
+                </div>
+                <span class="text-white text-[14px]">أرشيف الطلبات</span>
+              </a>
+              <a href="files.html" class="flex items-center gap-3 p-2">
+                <div
+                  class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
+                >
+                  <img src="./images/file-earmark-text.png" alt="" />
+                </div>
+                <span class="text-white text-[14px]">الملفات</span>
+              </a>
+              <a href="company-data.html" class="flex items-center gap-3 p-2">
+                <div
+                  class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
+                >
+                  <img src="./images/user-profile.png" alt="" />
+                </div>
+                <span class="text-white text-[14px]">بيانات الشركة</span>
+              </a>
+            </nav>
+            <div class="py-5 relative">
+              <div class="relative z-[9]">
+                <div class="lg:ps-[35px]">
+                  <a href="index.html" class="flex items-center p-2 gap-3 mb-4">
+                    <div
+                      class="w-[35px] h-[35px] flex items-center justify-center bg-gradien-3 rounded-full"
+                    >
+                      <img src="./images/logout.png" alt="" />
+                    </div>
+                    <span class="text-white text-[14px]">تسجيل خروج</span>
+                  </a>
+                </div>
+                <p
+                  class="text-[#9092AD] text-[12px] text-center mt-5 mb-3 lg:px-[50px] px-2"
+                >
+                  جميع الحقوق محفوظه لسلسلة 2024
+                </p>
+              </div>
+              <!-- Shape -->
+              <div
+                class="flex items-center absolute bottom-[-130px] right-0 left-0 m-auto justify-center bg-white/[3%] w-[250px] h-[250px] rounded-full"
+              >
+                <div
+                  class="flex items-center justify-center bg-white/[5%] w-[170px] h-[170px] rounded-full border-[5px] border-primary"
+                >
                   <div
-                    class="rounded-full border overflow-hidden w-[75px] h-[75px] max-[600px]:m-auto"
+                    class="flex items-center justify-center bg-white/[10%] w-[100px] h-[100px] rounded-full border-[7px] border-primary"
                   >
-                    <img
-                      src="./images/01.png"
-                      class="object-contain w-[75px] h-[75px]"
-                      alt=""
-                    />
-                  </div>
-                  <div class="max-[600px]:text-center">
-                    <h4 class="SF-medium text-primary text-[14px] mt-5">
-                      البريد السعودي
-                    </h4>
-                    <h5 class="text-[#93A8E5] text-[13px] SF-medium my-4">
-                      المتطلبات والشروط
-                    </h5>
-                    <p class="text-[13px] text-primary/[75%]">
-                      1- صورة الهوية 2- صورة السجل التجاري 3- كلمة مرور الغرفة
-                      التجارية
-                    </p>
+                    <div
+                      class="flex items-center justify-center bg-primary w-[30px] h-[30px] rounded-full"
+                    ></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="px-[120px] max-[1300px]:px-[30px]">
-              <form
-                action="index.html"
-                class="bg-white gap-5 lg:py-3 lg:px-0 p-7 lg:border-0 border rounded-[10px] lg:rounded-full"
-              >
-                <h4 class="text-[20px] SF-medium text-primary mb-6">
-                  اضافة بيانات الترخص
-                </h4>
-                <div class="grid grid-cols-12 items-center gap-5">
-                  <div class="lg:col-span-4 col-span-12">
-                    <div class="w-full mb-2">
-                      <label class="block text-primary/[60%] text-[14px] mb-2"
-                        >اسم الشركة</label
-                      >
-                      <input
-                        type="text"
-                        class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
-                        placeholder="ادخل اسم الشركة"
-                      />
-                    </div>
-                  </div>
-                  <div class="lg:col-span-4 col-span-12">
-                    <div class="w-full mb-2">
-                      <label class="block text-primary/[60%] text-[14px] mb-2"
-                        >رقم الترخيص</label
-                      >
-                      <input
-                        type="text"
-                        class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
-                        placeholder="ادخل رقم الترخيص"
-                      />
-                    </div>
-                  </div>
-                  <div class="lg:col-span-4 col-span-12">
-                    <div class="w-full mb-2">
-                      <label class="block text-primary/[60%] text-[14px] mb-2"
-                        >عدد العمالة</label
-                      >
-                      <input
-                        type="text"
-                        class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
-                        placeholder="ادخل عدد العمالة"
-                      />
-                    </div>
-                  </div>
-                  <div class="lg:col-span-12 col-span-12">
-                    <div class="w-full mb-2">
-                      <label class="block text-primary/[60%] text-[14px] mb-2"
-                        >معلومات وبيانات الترخيص ( تعرض للموظف )</label
-                      >
-                      <textarea
-                        type="text"
-                        class="rounded-[10px] resize-none min-h-[130px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
-                        placeholder="كتابة تفصال الطلب هنا"
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="flex items-center justify-between lg:flex-row gap-3 flex-col bg-primaryOrange/[9%] rounded-[15px] py-2 px-4"
-                >
-                  <p class="text-[14px] text-primary SF-medium">
-                    اضغط حفظ ومن ثم قم بإرفاق الملفات وإضافة الموظفين في الاسفل
-                  </p>
-                  <button
-                    type="submit"
-                    class="bg-white border border-primaryOrange SF-medium text-[12px] relative text-primaryOrange rounded-full shadow-lg lg:w-[150px] w-full h-[50px] flex items-center gap-2 justify-center"
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="flex-1 px-4 overflow-y-auto">
+          <!-- Header -->
+          <div
+            class="flex justify-between items-center mb-6 p-5 bg-white rounded-b-[15px] sticky top-0 z-[99]"
+          >
+            <a href=""><img src="./images/logo.png" alt="" /></a>
+            <div class="flex items-center gap-5">
+              <ul class="flex items-center gap-3">
+                <li>
+                  <a href="index.html" class="text-primary text-[15px]"
+                    >الرئيسية</a
                   >
-                    <span>حفظ وارسال</span>
-                  </button>
-                </div>
-              </form>
+                </li>
+                <li>
+                  <a href="contact-us.html" class="text-primary text-[15px]"
+                    >من نحن</a
+                  >
+                </li>
+              </ul>
+              <img
+                src="https://i.ibb.co/Xp1Ckk4/11123.png"
+                alt="Profile"
+                class="w-[45px] h-[45px] rounded-full"
+              />
             </div>
           </div>
-        </div>
-        <div class="py-6 lg:px-7 bg-white rounded-[15px] mb-5">
-          <div class="container">
-            <div class="px-[120px] max-[1300px]:px-[30px]">
-              <form
-                action="index.html"
-                class="bg-white gap-5 lg:py-3 lg:px-0 p-7 lg:border-0 border rounded-[10px] lg:rounded-full"
-              >
-                <h4 class="text-[20px] SF-medium text-primary mb-6">
-                  اضافة بيانات الموظف وارافق الملفات
-                </h4>
-                <div class="grid grid-cols-12 items-center gap-5">
-                  <div class="lg:col-span-12 col-span-12">
-                    <div class="w-full mb-2">
-                      <label class="block text-primary/[60%] text-[14px] mb-2"
-                        >اسم الموظف - اختياري</label
-                      >
-                      <input
-                        type="text"
-                        class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
-                        placeholder="كتابة الاسم بالكامل هنا"
+
+          <!-- Body Content -->
+          <div class="py-6 lg:px-7 bg-white rounded-[15px] mb-5">
+            <a
+              href="#"
+              type="button"
+              class="flex items-center gap-3"
+              data-modal-hide="service-modal"
+            >
+              <span
+                class="w-[35px] h-[35px] flex items-center justify-center rounded-full border"
+                ><i
+                  class="icon-chevron-right ltr:rotate-180 text-[#9092AD] text-[20px]"
+                ></i
+              ></span>
+              <span class="SF-medium text-primary text-[14px]">رجوع</span>
+            </a>
+            <h5 class="text-primary text-[20px] SF-medium text-center">
+              إضافة ترخيص
+            </h5>
+            <div class="container">
+              <div class="p-7 bg-white rounded-[15px]">
+                <div class="flex items-center justify-between">
+                  <div class="flex max-[600px]:flex-col gap-5">
+                    <div
+                      class="rounded-full border overflow-hidden w-[75px] h-[75px] max-[600px]:m-auto"
+                    >
+                      <img
+                        src="./images/01.png"
+                        class="object-contain w-[75px] h-[75px]"
+                        alt=""
                       />
                     </div>
-                  </div>
-                  <div class="lg:col-span-4 col-span-12">
-                    <div class="w-full mb-2">
-                      <label class="block text-primary/[60%] text-[14px] mb-2"
-                        >رقم الإقامة</label
-                      >
-                      <input
-                        type="text"
-                        class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
-                        placeholder="رقم الترخيص"
-                      />
-                    </div>
-                  </div>
-                  <div class="lg:col-span-4 col-span-12">
-                    <div class="w-full mb-2">
-                      <label class="block text-primary/[60%] text-[14px] mb-2"
-                        >تاريخ الإقامة</label
-                      >
-                      <div class="relative">
-                        <i
-                          class="icon-calendar-week text-[#9092AD] absolute top-[50%] translate-y-[-50%] rtl:right-[12px] ltr:left-[12px]"
-                        ></i>
-                        <input
-                          id="datePicker"
-                          type="text"
-                          placeholder="يوم / شهر / سنة"
-                          class="rounded-[10px] border lg:ps-[35px] relative bg-transparent border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full rtl:text-right ltr:text-left"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="lg:col-span-4 col-span-12">
-                    <div class="w-full mb-2">
-                      <label class="block text-primary/[60%] text-[14px] mb-2"
-                        >تاريخ الإنتهاء</label
-                      >
-                      <div class="relative">
-                        <i
-                          class="icon-calendar-week text-[#9092AD] absolute top-[50%] translate-y-[-50%] rtl:right-[12px] ltr:left-[12px]"
-                        ></i>
-                        <input
-                          id="datePicker"
-                          type="text"
-                          placeholder="يوم / شهر / سنة"
-                          class="rounded-[10px] border lg:ps-[35px] relative bg-transparent border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full rtl:text-right ltr:text-left"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex items-center justify-end py-2">
-                  <button
-                    type="submit"
-                    class="bg-primary border border-primary SF-medium text-[12px] relative text-white rounded-full shadow-lg lg:w-[150px] w-full h-[50px] flex items-center gap-2 justify-center"
-                  >
-                    <span>اضافة الموظف</span>
-                  </button>
-                </div>
-              </form>
-              <div class="py-3">
-                <h4 class="text-[20px] SF-medium text-primary mb-6">
-                  بيانات الموظفين المضافين
-                </h4>
-                <div class="relative overflow-x-auto rounded-[10px] mb-5">
-                  <table
-                    class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
-                  >
-                    <thead class="bg-[#EBF1F5]">
-                      <tr>
-                        <th class="px-6 py-3 text-[12px] text-[#9092AD]">#</th>
-                        <th class="px-6 py-3 text-[12px] text-[#9092AD]">
-                          اسم الموظف
-                        </th>
-                        <th class="px-6 py-3 text-[12px] text-[#9092AD]">
-                          تاريخ الاقامة
-                        </th>
-                        <th class="px-6 py-3 text-[12px] text-[#9092AD]">
-                          تاريخ الانتهاء
-                        </th>
-                        <th class="px-6 py-3 text-[12px] text-[#9092AD]">
-                          حالة الاقامة
-                        </th>
-                        <th
-                          class="px-6 py-3 text-[12px] text-[#9092AD] text-center"
-                        >
-                          الإجراءات
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="bg-white border-b">
-                        <td class="px-6 py-3">01</td>
-                        <td
-                          class="px-6 py-3 SF-medium text-primary text-[12px]"
-                        >
-                          محمد احمد عبده
-                        </td>
-                        <td class="px-6 py-3 text-primary text-[12px]">
-                          28-10-2024
-                        </td>
-                        <td class="px-6 py-3 text-primary text-[12px]">
-                          28-10-2024
-                        </td>
-                        <td class="px-6 py-3">
-                          <div class="flex items-center gap-2">
-                            <i
-                              class="icon-x-circle text-[#BF4646] text-[18px]"
-                            ></i>
-                            <span class="text-[12px] text-[#BF4646]"
-                              >منتهية</span
-                            >
-                          </div>
-                        </td>
-                        <td class="px-6 py-3">
-                          <button
-                            id="dropdownDefaultButton1"
-                            data-dropdown-toggle="dropdown1"
-                            class="m-auto border rounded-full border-[#EAF1F4] w-[120px] h-[35px] bg-white text-center justify-center flex items-center gap-2"
-                            type="button"
-                          >
-                            <i class="icon-settings text-[#9092AD]"></i>
-                            <span class="text-[#9092AD] text-[12px] SF-medium"
-                              >الاجراءات</span
-                            >
-                          </button>
-                          <!-- Dropdown menu -->
-                          <div
-                            id="dropdown1"
-                            class="z-10 hidden bg-white shadow-lg rounded-[10px] border border-[#EAF1F4]"
-                          >
-                            <ul
-                              class="py-2"
-                              aria-labelledby="dropdownDefaultButton1"
-                            >
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-refresh-cw text-[#9092AD]"></i>
-                                  <span class="text-[12px] text-primary"
-                                    >تجديد</span
-                                  >
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-edit text-[#9092AD]"></i>
-                                  <span class="text-[12px] text-primary"
-                                    >تعديل</span
-                                  >
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-delete text-[#BF4646]"></i>
-                                  <span class="text-[12px] text-[#BF4646]"
-                                    >حذف</span
-                                  >
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="bg-white border-b">
-                        <td class="px-6 py-3">01</td>
-                        <td
-                          class="px-6 py-3 SF-medium text-primary text-[12px]"
-                        >
-                          محمد احمد عبده
-                        </td>
-                        <td class="px-6 py-3 text-primary text-[12px]">
-                          28-10-2024
-                        </td>
-                        <td class="px-6 py-3 text-primary text-[12px]">
-                          28-10-2024
-                        </td>
-                        <td class="px-6 py-3">
-                          <div class="flex items-center gap-2">
-                            <i
-                              class="icon-time-wait text-primaryOrange text-[18px]"
-                            ></i>
-                            <span class="text-[12px] text-primaryOrange"
-                              >قريبا</span
-                            >
-                          </div>
-                        </td>
-                        <td class="px-6 py-3">
-                          <button
-                            id="dropdownDefaultButton2"
-                            data-dropdown-toggle="dropdown2"
-                            class="m-auto border rounded-full border-[#EAF1F4] w-[120px] h-[35px] bg-white text-center justify-center flex items-center gap-2"
-                            type="button"
-                          >
-                            <i class="icon-settings text-[#9092AD]"></i>
-                            <span class="text-[#9092AD] text-[12px] SF-medium"
-                              >الاجراءات</span
-                            >
-                          </button>
-                          <!-- Dropdown menu -->
-                          <div
-                            id="dropdown2"
-                            class="z-10 hidden bg-white shadow-lg rounded-[10px] border border-[#EAF1F4]"
-                          >
-                            <ul
-                              class="py-2"
-                              aria-labelledby="dropdownDefaultButton2"
-                            >
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-refresh-cw text-[#9092AD]"></i>
-                                  <span class="text-[12px] text-primary"
-                                    >تجديد</span
-                                  >
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-edit text-[#9092AD]"></i>
-                                  <span class="text-[12px] text-primary"
-                                    >تعديل</span
-                                  >
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-delete text-[#BF4646]"></i>
-                                  <span class="text-[12px] text-[#BF4646]"
-                                    >حذف</span
-                                  >
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="bg-white border-b">
-                        <td class="px-6 py-3">01</td>
-                        <td
-                          class="px-6 py-3 SF-medium text-primary text-[12px]"
-                        >
-                          محمد احمد عبده
-                        </td>
-                        <td class="px-6 py-3 text-primary text-[12px]">
-                          28-10-2024
-                        </td>
-                        <td class="px-6 py-3 text-primary text-[12px]">
-                          28-10-2024
-                        </td>
-                        <td class="px-6 py-3">
-                          <div class="flex items-center gap-2">
-                            <i
-                              class="icon-check-circle text-[#46C09A] text-[18px]"
-                            ></i>
-                            <span class="text-[12px] text-[#46C09A]"
-                              >فعالة</span
-                            >
-                          </div>
-                        </td>
-                        <td class="px-6 py-3">
-                          <button
-                            id="dropdownDefaultButton3"
-                            data-dropdown-toggle="dropdown3"
-                            class="m-auto border rounded-full border-[#EAF1F4] w-[120px] h-[35px] bg-white text-center justify-center flex items-center gap-2"
-                            type="button"
-                          >
-                            <i class="icon-settings text-[#9092AD]"></i>
-                            <span class="text-[#9092AD] text-[12px] SF-medium"
-                              >الاجراءات</span
-                            >
-                          </button>
-                          <!-- Dropdown menu -->
-                          <div
-                            id="dropdown3"
-                            class="z-10 hidden bg-white shadow-lg rounded-[10px] border border-[#EAF1F4]"
-                          >
-                            <ul
-                              class="py-2"
-                              aria-labelledby="dropdownDefaultButton3"
-                            >
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-refresh-cw text-[#9092AD]"></i>
-                                  <span class="text-[12px] text-primary"
-                                    >تجديد</span
-                                  >
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-edit text-[#9092AD]"></i>
-                                  <span class="text-[12px] text-primary"
-                                    >تعديل</span
-                                  >
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-delete text-[#BF4646]"></i>
-                                  <span class="text-[12px] text-[#BF4646]"
-                                    >حذف</span
-                                  >
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="bg-white border-b">
-                        <td class="px-6 py-3">01</td>
-                        <td
-                          class="px-6 py-3 SF-medium text-primary text-[12px]"
-                        >
-                          محمد احمد عبده
-                        </td>
-                        <td class="px-6 py-3 text-primary text-[12px]">
-                          28-10-2024
-                        </td>
-                        <td class="px-6 py-3 text-primary text-[12px]">
-                          28-10-2024
-                        </td>
-                        <td class="px-6 py-3">
-                          <div class="flex items-center gap-2">
-                            <i
-                              class="icon-time-wait text-primaryOrange text-[18px]"
-                            ></i>
-                            <span class="text-[12px] text-primaryOrange"
-                              >قريبا</span
-                            >
-                          </div>
-                        </td>
-                        <td class="px-6 py-3">
-                          <button
-                            id="dropdownDefaultButton2"
-                            data-dropdown-toggle="dropdown2"
-                            class="m-auto border rounded-full border-[#EAF1F4] w-[120px] h-[35px] bg-white text-center justify-center flex items-center gap-2"
-                            type="button"
-                          >
-                            <i class="icon-settings text-[#9092AD]"></i>
-                            <span class="text-[#9092AD] text-[12px] SF-medium"
-                              >الاجراءات</span
-                            >
-                          </button>
-                          <!-- Dropdown menu -->
-                          <div
-                            id="dropdown2"
-                            class="z-10 hidden bg-white shadow-lg rounded-[10px] border border-[#EAF1F4]"
-                          >
-                            <ul
-                              class="py-2"
-                              aria-labelledby="dropdownDefaultButton2"
-                            >
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-refresh-cw text-[#9092AD]"></i>
-                                  <span class="text-[12px] text-primary"
-                                    >تجديد</span
-                                  >
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-edit text-[#9092AD]"></i>
-                                  <span class="text-[12px] text-primary"
-                                    >تعديل</span
-                                  >
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-delete text-[#BF4646]"></i>
-                                  <span class="text-[12px] text-[#BF4646]"
-                                    >حذف</span
-                                  >
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="bg-white border-b">
-                        <td class="px-6 py-3">01</td>
-                        <td
-                          class="px-6 py-3 SF-medium text-primary text-[12px]"
-                        >
-                          محمد احمد عبده
-                        </td>
-                        <td class="px-6 py-3 text-primary text-[12px]">
-                          28-10-2024
-                        </td>
-                        <td class="px-6 py-3 text-primary text-[12px]">
-                          28-10-2024
-                        </td>
-                        <td class="px-6 py-3">
-                          <div class="flex items-center gap-2">
-                            <i
-                              class="icon-check-circle text-[#46C09A] text-[18px]"
-                            ></i>
-                            <span class="text-[12px] text-[#46C09A]"
-                              >فعالة</span
-                            >
-                          </div>
-                        </td>
-                        <td class="px-6 py-3">
-                          <button
-                            id="dropdownDefaultButton3"
-                            data-dropdown-toggle="dropdown3"
-                            class="m-auto border rounded-full border-[#EAF1F4] w-[120px] h-[35px] bg-white text-center justify-center flex items-center gap-2"
-                            type="button"
-                          >
-                            <i class="icon-settings text-[#9092AD]"></i>
-                            <span class="text-[#9092AD] text-[12px] SF-medium"
-                              >الاجراءات</span
-                            >
-                          </button>
-                          <!-- Dropdown menu -->
-                          <div
-                            id="dropdown3"
-                            class="z-10 hidden bg-white shadow-lg rounded-[10px] border border-[#EAF1F4]"
-                          >
-                            <ul
-                              class="py-2"
-                              aria-labelledby="dropdownDefaultButton3"
-                            >
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-refresh-cw text-[#9092AD]"></i>
-                                  <span class="text-[12px] text-primary"
-                                    >تجديد</span
-                                  >
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-edit text-[#9092AD]"></i>
-                                  <span class="text-[12px] text-primary"
-                                    >تعديل</span
-                                  >
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href="#"
-                                  class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
-                                >
-                                  <i class="icon-delete text-[#BF4646]"></i>
-                                  <span class="text-[12px] text-[#BF4646]"
-                                    >حذف</span
-                                  >
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="py-9 lg:px-7 bg-white rounded-[15px] mb-5">
-          <div class="container">
-            <div class="px-[120px] max-[1300px]:px-[30px]">
-              <h4 class="text-[20px] SF-medium text-primary mb-6">
-                اضافة ملفات
-              </h4>
-              <div class="rounded-[10px] bg-[#EBF1F5] p-6">
-                <div
-                  class="flex items-center gap-3 justify-between max-[1100px]:flex-col"
-                >
-                  <div class="flex gap-3">
-                    <i class="icon-upload text-[#9092AD] text-[30px]"></i>
-                    <div class="px-2">
-                      <h4 class="text-[14px] mb-2 SF-medium text-primary">
-                        أرافق ملفات
+                    <div class="max-[600px]:text-center">
+                      <h4 class="SF-medium text-primary text-[14px] mt-5">
+                        البريد السعودي
                       </h4>
-                      <p class="text-primary text-[14px]">
-                        يمكنك ارفاق ملفات للطب <span>Pdf,Doc,zip</span>
+                      <h5 class="text-[#93A8E5] text-[13px] SF-medium my-4">
+                        المتطلبات والشروط
+                      </h5>
+                      <p class="text-[13px] text-primary/[75%]">
+                        1- صورة الهوية 2- صورة السجل التجاري 3- كلمة مرور الغرفة
+                        التجارية
                       </p>
                     </div>
                   </div>
-                  <div
-                    class="flex items-center max-[800px]:flex-col gap-5 max-[800px]:w-full"
-                  >
-                    <input
-                      type="text"
-                      placeholder="كتابه اسم الملف"
-                      class="bg-white rounded-[10px] h-[48px] w-[230px] max-[800px]:w-full border-0 text-[13px]"
-                    />
-                    <div class="relative overflow-hidden">
-                      <input
-                        type="file"
-                        class="opacity-0 absolute top-0 right-0 w-full h-full"
-                      />
-                      <button
-                        class="bg-primary text-white h-[48px] w-[150px] border-0 text-[13px] text-center rounded-full"
-                      >
-                        استعراض
-                      </button>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div
-                class="flex items-center justify-between lg:flex-row flex-col"
-              >
-                <div class="py-4">
-                  <div class="flex items-center gap-3 mb-3">
-                    <img src="./images/pdf.png" alt="" />
-                    <h4 class="text-primary text-[12px]">اسم الملف يوضع هنا</h4>
-                    <button><i class="icon-x text-[#9092AD]"></i></button>
-                  </div>
-                </div>
-                <div class="py-4">
-                  <div class="flex items-center gap-3">
-                    <h5 class="text-[12px] text-[#9092AD]">حاله الرفع</h5>
-                    <div
-                      class="relative overflow-hidden w-[180px] h-[7px] bg-[#EBF1F5] rounded-full"
-                    >
-                      <div
-                        class="absolute rtl:right-0 ltr:left-0 top-0 w-[40%] h-full bg-[#46BF9A] rounded-full"
-                      ></div>
-                    </div>
-                    <h5 class="text-[12px] text-[#9092AD]">45%</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center justify-end my-9">
-                <button
-                  type="submit"
-                  class="bg-primaryOrange SF-medium text-[14px] relative text-white rounded-full shadow-lg lg:w-[170px] w-full h-[50px] flex items-center gap-2 justify-center mt-[20px]"
+              <div class="px-[120px] max-[1300px]:px-[30px]">
+                <form
+                  action="index.html"
+                  class="bg-white gap-5 lg:py-3 lg:px-0 p-7 lg:border-0 border rounded-[10px] lg:rounded-full"
                 >
-                  <i class="text-white icon-send"></i>
-                  <span>حفظ وإرسال</span>
-                </button>
+                  <h4 class="text-[20px] SF-medium text-primary mb-6">
+                    اضافة بيانات الترخص
+                  </h4>
+                  <div class="grid grid-cols-12 items-center gap-5">
+                    <div class="lg:col-span-4 col-span-12">
+                      <div class="w-full mb-2">
+                        <label class="block text-primary/[60%] text-[14px] mb-2"
+                          >اسم الشركة</label
+                        >
+                        <input
+                          type="text"
+                          class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                          placeholder="ادخل اسم الشركة"
+                        />
+                      </div>
+                    </div>
+                    <div class="lg:col-span-4 col-span-12">
+                      <div class="w-full mb-2">
+                        <label class="block text-primary/[60%] text-[14px] mb-2"
+                          >رقم الترخيص</label
+                        >
+                        <input
+                          type="text"
+                          class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                          placeholder="ادخل رقم الترخيص"
+                        />
+                      </div>
+                    </div>
+                    <div class="lg:col-span-4 col-span-12">
+                      <div class="w-full mb-2">
+                        <label class="block text-primary/[60%] text-[14px] mb-2"
+                          >عدد العمالة</label
+                        >
+                        <input
+                          type="text"
+                          class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                          placeholder="ادخل عدد العمالة"
+                        />
+                      </div>
+                    </div>
+                    <div class="lg:col-span-12 col-span-12">
+                      <div class="w-full mb-2">
+                        <label class="block text-primary/[60%] text-[14px] mb-2"
+                          >معلومات وبيانات الترخيص ( تعرض للموظف )</label
+                        >
+                        <textarea
+                          type="text"
+                          class="rounded-[10px] resize-none min-h-[130px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                          placeholder="كتابة تفصال الطلب هنا"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between lg:flex-row gap-3 flex-col bg-primaryOrange/[9%] rounded-[15px] py-2 px-4"
+                  >
+                    <p class="text-[14px] text-primary SF-medium">
+                      اضغط حفظ ومن ثم قم بإرفاق الملفات وإضافة الموظفين في
+                      الاسفل
+                    </p>
+                    <button
+                      type="submit"
+                      class="bg-white border border-primaryOrange SF-medium text-[12px] relative text-primaryOrange rounded-full shadow-lg lg:w-[150px] w-full h-[50px] flex items-center gap-2 justify-center"
+                    >
+                      <span>حفظ وارسال</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="py-6 lg:px-7 bg-white rounded-[15px] mb-5">
+            <div class="container">
+              <div class="px-[120px] max-[1300px]:px-[30px]">
+                <form
+                  action="index.html"
+                  class="bg-white gap-5 lg:py-3 lg:px-0 p-7 lg:border-0 border rounded-[10px] lg:rounded-full"
+                >
+                  <h4 class="text-[20px] SF-medium text-primary mb-6">
+                    اضافة بيانات الموظف وارافق الملفات
+                  </h4>
+                  <div class="grid grid-cols-12 items-center gap-5">
+                    <div class="lg:col-span-12 col-span-12">
+                      <div class="w-full mb-2">
+                        <label class="block text-primary/[60%] text-[14px] mb-2"
+                          >اسم الموظف - اختياري</label
+                        >
+                        <input
+                          type="text"
+                          class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                          placeholder="كتابة الاسم بالكامل هنا"
+                        />
+                      </div>
+                    </div>
+                    <div class="lg:col-span-4 col-span-12">
+                      <div class="w-full mb-2">
+                        <label class="block text-primary/[60%] text-[14px] mb-2"
+                          >رقم الإقامة</label
+                        >
+                        <input
+                          type="text"
+                          class="rounded-[10px] border border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full"
+                          placeholder="رقم الترخيص"
+                        />
+                      </div>
+                    </div>
+                    <div class="lg:col-span-4 col-span-12">
+                      <div class="w-full mb-2">
+                        <label class="block text-primary/[60%] text-[14px] mb-2"
+                          >تاريخ الإقامة</label
+                        >
+                        <div class="relative">
+                          <i
+                            class="icon-calendar-week text-[#9092AD] absolute top-[50%] translate-y-[-50%] rtl:right-[12px] ltr:left-[12px]"
+                          ></i>
+                          <input
+                            id="datePicker"
+                            type="text"
+                            placeholder="يوم / شهر / سنة"
+                            class="rounded-[10px] border lg:ps-[35px] relative bg-transparent border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full rtl:text-right ltr:text-left"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-4 col-span-12">
+                      <div class="w-full mb-2">
+                        <label class="block text-primary/[60%] text-[14px] mb-2"
+                          >تاريخ الإنتهاء</label
+                        >
+                        <div class="relative">
+                          <i
+                            class="icon-calendar-week text-[#9092AD] absolute top-[50%] translate-y-[-50%] rtl:right-[12px] ltr:left-[12px]"
+                          ></i>
+                          <input
+                            id="datePicker"
+                            type="text"
+                            placeholder="يوم / شهر / سنة"
+                            class="rounded-[10px] border lg:ps-[35px] relative bg-transparent border-[#EBF1F5] focus:border-primaryOrange h-[45px] px-5 text-[12px] w-full rtl:text-right ltr:text-left"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-end py-2">
+                    <button
+                      type="submit"
+                      class="bg-primary border border-primary SF-medium text-[12px] relative text-white rounded-full shadow-lg lg:w-[150px] w-full h-[50px] flex items-center gap-2 justify-center"
+                    >
+                      <span>اضافة الموظف</span>
+                    </button>
+                  </div>
+                </form>
+                <div class="py-3">
+                  <h4 class="text-[20px] SF-medium text-primary mb-6">
+                    بيانات الموظفين المضافين
+                  </h4>
+                  <div class="relative overflow-x-auto rounded-[10px] mb-5">
+                    <table
+                      class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+                    >
+                      <thead class="bg-[#EBF1F5]">
+                        <tr>
+                          <th class="px-6 py-3 text-[12px] text-[#9092AD]">
+                            #
+                          </th>
+                          <th class="px-6 py-3 text-[12px] text-[#9092AD]">
+                            اسم الموظف
+                          </th>
+                          <th class="px-6 py-3 text-[12px] text-[#9092AD]">
+                            تاريخ الاقامة
+                          </th>
+                          <th class="px-6 py-3 text-[12px] text-[#9092AD]">
+                            تاريخ الانتهاء
+                          </th>
+                          <th class="px-6 py-3 text-[12px] text-[#9092AD]">
+                            حالة الاقامة
+                          </th>
+                          <th
+                            class="px-6 py-3 text-[12px] text-[#9092AD] text-center"
+                          >
+                            الإجراءات
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="bg-white border-b">
+                          <td class="px-6 py-3">01</td>
+                          <td
+                            class="px-6 py-3 SF-medium text-primary text-[12px]"
+                          >
+                            محمد احمد عبده
+                          </td>
+                          <td class="px-6 py-3 text-primary text-[12px]">
+                            28-10-2024
+                          </td>
+                          <td class="px-6 py-3 text-primary text-[12px]">
+                            28-10-2024
+                          </td>
+                          <td class="px-6 py-3">
+                            <div class="flex items-center gap-2">
+                              <i
+                                class="icon-x-circle text-[#BF4646] text-[18px]"
+                              ></i>
+                              <span class="text-[12px] text-[#BF4646]"
+                                >منتهية</span
+                              >
+                            </div>
+                          </td>
+                          <td class="px-6 py-3">
+                            <button
+                              id="dropdownDefaultButton1"
+                              data-dropdown-toggle="dropdown1"
+                              class="m-auto border rounded-full border-[#EAF1F4] w-[120px] h-[35px] bg-white text-center justify-center flex items-center gap-2"
+                              type="button"
+                            >
+                              <i class="icon-settings text-[#9092AD]"></i>
+                              <span class="text-[#9092AD] text-[12px] SF-medium"
+                                >الاجراءات</span
+                              >
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div
+                              id="dropdown1"
+                              class="z-10 hidden bg-white shadow-lg rounded-[10px] border border-[#EAF1F4]"
+                            >
+                              <ul
+                                class="py-2"
+                                aria-labelledby="dropdownDefaultButton1"
+                              >
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i
+                                      class="icon-refresh-cw text-[#9092AD]"
+                                    ></i>
+                                    <span class="text-[12px] text-primary"
+                                      >تجديد</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i class="icon-edit text-[#9092AD]"></i>
+                                    <span class="text-[12px] text-primary"
+                                      >تعديل</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i class="icon-delete text-[#BF4646]"></i>
+                                    <span class="text-[12px] text-[#BF4646]"
+                                      >حذف</span
+                                    >
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                          <td class="px-6 py-3">01</td>
+                          <td
+                            class="px-6 py-3 SF-medium text-primary text-[12px]"
+                          >
+                            محمد احمد عبده
+                          </td>
+                          <td class="px-6 py-3 text-primary text-[12px]">
+                            28-10-2024
+                          </td>
+                          <td class="px-6 py-3 text-primary text-[12px]">
+                            28-10-2024
+                          </td>
+                          <td class="px-6 py-3">
+                            <div class="flex items-center gap-2">
+                              <i
+                                class="icon-time-wait text-primaryOrange text-[18px]"
+                              ></i>
+                              <span class="text-[12px] text-primaryOrange"
+                                >قريبا</span
+                              >
+                            </div>
+                          </td>
+                          <td class="px-6 py-3">
+                            <button
+                              id="dropdownDefaultButton2"
+                              data-dropdown-toggle="dropdown2"
+                              class="m-auto border rounded-full border-[#EAF1F4] w-[120px] h-[35px] bg-white text-center justify-center flex items-center gap-2"
+                              type="button"
+                            >
+                              <i class="icon-settings text-[#9092AD]"></i>
+                              <span class="text-[#9092AD] text-[12px] SF-medium"
+                                >الاجراءات</span
+                              >
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div
+                              id="dropdown2"
+                              class="z-10 hidden bg-white shadow-lg rounded-[10px] border border-[#EAF1F4]"
+                            >
+                              <ul
+                                class="py-2"
+                                aria-labelledby="dropdownDefaultButton2"
+                              >
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i
+                                      class="icon-refresh-cw text-[#9092AD]"
+                                    ></i>
+                                    <span class="text-[12px] text-primary"
+                                      >تجديد</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i class="icon-edit text-[#9092AD]"></i>
+                                    <span class="text-[12px] text-primary"
+                                      >تعديل</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i class="icon-delete text-[#BF4646]"></i>
+                                    <span class="text-[12px] text-[#BF4646]"
+                                      >حذف</span
+                                    >
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                          <td class="px-6 py-3">01</td>
+                          <td
+                            class="px-6 py-3 SF-medium text-primary text-[12px]"
+                          >
+                            محمد احمد عبده
+                          </td>
+                          <td class="px-6 py-3 text-primary text-[12px]">
+                            28-10-2024
+                          </td>
+                          <td class="px-6 py-3 text-primary text-[12px]">
+                            28-10-2024
+                          </td>
+                          <td class="px-6 py-3">
+                            <div class="flex items-center gap-2">
+                              <i
+                                class="icon-check-circle text-[#46C09A] text-[18px]"
+                              ></i>
+                              <span class="text-[12px] text-[#46C09A]"
+                                >فعالة</span
+                              >
+                            </div>
+                          </td>
+                          <td class="px-6 py-3">
+                            <button
+                              id="dropdownDefaultButton3"
+                              data-dropdown-toggle="dropdown3"
+                              class="m-auto border rounded-full border-[#EAF1F4] w-[120px] h-[35px] bg-white text-center justify-center flex items-center gap-2"
+                              type="button"
+                            >
+                              <i class="icon-settings text-[#9092AD]"></i>
+                              <span class="text-[#9092AD] text-[12px] SF-medium"
+                                >الاجراءات</span
+                              >
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div
+                              id="dropdown3"
+                              class="z-10 hidden bg-white shadow-lg rounded-[10px] border border-[#EAF1F4]"
+                            >
+                              <ul
+                                class="py-2"
+                                aria-labelledby="dropdownDefaultButton3"
+                              >
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i
+                                      class="icon-refresh-cw text-[#9092AD]"
+                                    ></i>
+                                    <span class="text-[12px] text-primary"
+                                      >تجديد</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i class="icon-edit text-[#9092AD]"></i>
+                                    <span class="text-[12px] text-primary"
+                                      >تعديل</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i class="icon-delete text-[#BF4646]"></i>
+                                    <span class="text-[12px] text-[#BF4646]"
+                                      >حذف</span
+                                    >
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                          <td class="px-6 py-3">01</td>
+                          <td
+                            class="px-6 py-3 SF-medium text-primary text-[12px]"
+                          >
+                            محمد احمد عبده
+                          </td>
+                          <td class="px-6 py-3 text-primary text-[12px]">
+                            28-10-2024
+                          </td>
+                          <td class="px-6 py-3 text-primary text-[12px]">
+                            28-10-2024
+                          </td>
+                          <td class="px-6 py-3">
+                            <div class="flex items-center gap-2">
+                              <i
+                                class="icon-time-wait text-primaryOrange text-[18px]"
+                              ></i>
+                              <span class="text-[12px] text-primaryOrange"
+                                >قريبا</span
+                              >
+                            </div>
+                          </td>
+                          <td class="px-6 py-3">
+                            <button
+                              id="dropdownDefaultButton2"
+                              data-dropdown-toggle="dropdown2"
+                              class="m-auto border rounded-full border-[#EAF1F4] w-[120px] h-[35px] bg-white text-center justify-center flex items-center gap-2"
+                              type="button"
+                            >
+                              <i class="icon-settings text-[#9092AD]"></i>
+                              <span class="text-[#9092AD] text-[12px] SF-medium"
+                                >الاجراءات</span
+                              >
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div
+                              id="dropdown2"
+                              class="z-10 hidden bg-white shadow-lg rounded-[10px] border border-[#EAF1F4]"
+                            >
+                              <ul
+                                class="py-2"
+                                aria-labelledby="dropdownDefaultButton2"
+                              >
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i
+                                      class="icon-refresh-cw text-[#9092AD]"
+                                    ></i>
+                                    <span class="text-[12px] text-primary"
+                                      >تجديد</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i class="icon-edit text-[#9092AD]"></i>
+                                    <span class="text-[12px] text-primary"
+                                      >تعديل</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i class="icon-delete text-[#BF4646]"></i>
+                                    <span class="text-[12px] text-[#BF4646]"
+                                      >حذف</span
+                                    >
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                          <td class="px-6 py-3">01</td>
+                          <td
+                            class="px-6 py-3 SF-medium text-primary text-[12px]"
+                          >
+                            محمد احمد عبده
+                          </td>
+                          <td class="px-6 py-3 text-primary text-[12px]">
+                            28-10-2024
+                          </td>
+                          <td class="px-6 py-3 text-primary text-[12px]">
+                            28-10-2024
+                          </td>
+                          <td class="px-6 py-3">
+                            <div class="flex items-center gap-2">
+                              <i
+                                class="icon-check-circle text-[#46C09A] text-[18px]"
+                              ></i>
+                              <span class="text-[12px] text-[#46C09A]"
+                                >فعالة</span
+                              >
+                            </div>
+                          </td>
+                          <td class="px-6 py-3">
+                            <button
+                              id="dropdownDefaultButton3"
+                              data-dropdown-toggle="dropdown3"
+                              class="m-auto border rounded-full border-[#EAF1F4] w-[120px] h-[35px] bg-white text-center justify-center flex items-center gap-2"
+                              type="button"
+                            >
+                              <i class="icon-settings text-[#9092AD]"></i>
+                              <span class="text-[#9092AD] text-[12px] SF-medium"
+                                >الاجراءات</span
+                              >
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div
+                              id="dropdown3"
+                              class="z-10 hidden bg-white shadow-lg rounded-[10px] border border-[#EAF1F4]"
+                            >
+                              <ul
+                                class="py-2"
+                                aria-labelledby="dropdownDefaultButton3"
+                              >
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i
+                                      class="icon-refresh-cw text-[#9092AD]"
+                                    ></i>
+                                    <span class="text-[12px] text-primary"
+                                      >تجديد</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i class="icon-edit text-[#9092AD]"></i>
+                                    <span class="text-[12px] text-primary"
+                                      >تعديل</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="#"
+                                    class="flex items-center justify-center gap-3 w-[120px] px-2 py-2"
+                                  >
+                                    <i class="icon-delete text-[#BF4646]"></i>
+                                    <span class="text-[12px] text-[#BF4646]"
+                                      >حذف</span
+                                    >
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-9 lg:px-7 bg-white rounded-[15px] mb-5">
+            <div class="container">
+              <div class="px-[120px] max-[1300px]:px-[30px]">
+                <h4 class="text-[20px] SF-medium text-primary mb-6">
+                  اضافة ملفات
+                </h4>
+                <div class="rounded-[10px] bg-[#EBF1F5] p-6">
+                  <div
+                    class="flex items-center gap-3 justify-between max-[1100px]:flex-col"
+                  >
+                    <div class="flex gap-3">
+                      <i class="icon-upload text-[#9092AD] text-[30px]"></i>
+                      <div class="px-2">
+                        <h4 class="text-[14px] mb-2 SF-medium text-primary">
+                          أرافق ملفات
+                        </h4>
+                        <p class="text-primary text-[14px]">
+                          يمكنك ارفاق ملفات للطب <span>Pdf,Doc,zip</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center max-[800px]:flex-col gap-5 max-[800px]:w-full"
+                    >
+                      <input
+                        type="text"
+                        placeholder="كتابه اسم الملف"
+                        class="bg-white rounded-[10px] h-[48px] w-[230px] max-[800px]:w-full border-0 text-[13px]"
+                      />
+                      <div class="relative overflow-hidden">
+                        <input
+                          type="file"
+                          class="opacity-0 absolute top-0 right-0 w-full h-full"
+                        />
+                        <button
+                          class="bg-primary text-white h-[48px] w-[150px] border-0 text-[13px] text-center rounded-full"
+                        >
+                          استعراض
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-between lg:flex-row flex-col"
+                >
+                  <div class="py-4">
+                    <div class="flex items-center gap-3 mb-3">
+                      <img src="./images/pdf.png" alt="" />
+                      <h4 class="text-primary text-[12px]">
+                        اسم الملف يوضع هنا
+                      </h4>
+                      <button><i class="icon-x text-[#9092AD]"></i></button>
+                    </div>
+                  </div>
+                  <div class="py-4">
+                    <div class="flex items-center gap-3">
+                      <h5 class="text-[12px] text-[#9092AD]">حاله الرفع</h5>
+                      <div
+                        class="relative overflow-hidden w-[180px] h-[7px] bg-[#EBF1F5] rounded-full"
+                      >
+                        <div
+                          class="absolute rtl:right-0 ltr:left-0 top-0 w-[40%] h-full bg-[#46BF9A] rounded-full"
+                        ></div>
+                      </div>
+                      <h5 class="text-[12px] text-[#9092AD]">45%</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-end my-9">
+                  <button
+                    type="submit"
+                    class="bg-primaryOrange SF-medium text-[14px] relative text-white rounded-full shadow-lg lg:w-[170px] w-full h-[50px] flex items-center gap-2 justify-center mt-[20px]"
+                  >
+                    <i class="text-white icon-send"></i>
+                    <span>حفظ وإرسال</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

@@ -16,6 +16,7 @@ $(window).on("load", function () {
       $(".loader").fadeOut(300);
     });
   $("body").css("overflow-y", "auto");
+  $(".hidden-over").removeClass("hidden");
 
   // Animation Page
   AOS.init();
@@ -35,9 +36,9 @@ $(document).ready(function () {
   // Click Scroll Up Page
   $(document).on("click", ".toggle-oreder-modal", function () {
     $(".show-details-Order").toggleClass("hidden");
-    setTimeout(()=> {
+    setTimeout(() => {
       $(".inf-order-details").toggleClass("!transform-none");
-    },100)
+    }, 100);
   });
 
   // Click Scroll Up Page
